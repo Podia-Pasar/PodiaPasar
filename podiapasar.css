@@ -260,7 +260,6 @@ main{
 .divCuerpo{
     display: flex;
     flex-direction: row;
-
 }
 
 
@@ -405,7 +404,7 @@ main{
     box-shadow:  -4px 4px 8px rgb(0, 0, 0, 0.5);
 }
 .infoNos h3{
-    font-size: 50px;
+    font-size: clamp(25px, 5vw, 40px);
 }
 .infoNos hr{
     width: 30%;
@@ -417,7 +416,7 @@ main{
 }
 .infoNos p{
     width: 70%;
-    font-size: 20px; 
+    font-size: clamp(12px, 3vw, 20px);
     margin-top: 10px;
 }
 .infoNos button{
@@ -431,7 +430,7 @@ main{
 }
 .infoNos button:hover{
     cursor: pointer;
-    box-shadow: 0px 4px 8px rgba(255, 255, 255, 0.3);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 
@@ -447,7 +446,7 @@ main{
 }
 
 .formContacto h3 {
-    font-size: 40px;
+    font-size: clamp(25px, 5vw, 40px);
     text-align: center;
     color: white;
 }
@@ -468,14 +467,14 @@ main{
     width: 100%;
 }
 .formContacto label{
-    font-size: 20px;
+    font-size: clamp(15px, 3vw, 20px);
     color: white;
     margin: 0;
 }
 .formContacto input{
     height: 20px;
     border: none;
-    font-size: 20px;
+    font-size: clamp(15px, 3vw, 20px);
     padding: 5px;
     width: 100%;
     border-radius: 5px;
@@ -651,6 +650,29 @@ footer{
         font-size: 18px;
         margin-top: 10px;
     }
+
+    
+    .hotMenu {
+        width: 20%;
+        left: -100%;
+    }
+    .hotMenu li{
+        font-size: 25px;
+    }
+    .hotMenuRedes i {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        color: black;
+        font-size: 30px;
+        border-radius: 50px;
+        margin-top: 20px;
+        width: 50px;
+        height: 50px;
+        margin-bottom: 30px;
+        transition: scale 0.1s ease-in-out;
+    }
 }
 @media (min-width: 1200px) and (max-width: 1400px) {
     .ulNotSecundarias img {
@@ -713,6 +735,30 @@ footer{
     }
     .divSugerido a{
         margin-top: 5px;
+    }
+
+
+    
+    .hotMenu {
+        width: 30%;
+        left: -100%;
+    }
+    .hotMenu li{
+        font-size: 24px;
+    }
+    .hotMenuRedes i {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        color: black;
+        font-size: 30px;
+        border-radius: 50px;
+        margin-top: 20px;
+        width: 50px;
+        height: 50px;
+        margin-bottom: 30px;
+        transition: scale 0.1s ease-in-out;
     }
 }
 @media (min-width: 900px) and (max-width: 1200px) {
@@ -795,6 +841,44 @@ footer{
     }
     .divSugerido a{
         margin-top: 5px;
+    }
+
+
+    .nosotros {
+        display: flex;
+        flex-direction: column;
+    }
+    .infoNos {
+        width: 500px;
+        margin-bottom: 20px;
+        border-radius: 5px;
+    }
+    .formContacto{
+        width: 500px;
+        border-radius: 5px;
+    }
+
+
+    .hotMenu {
+        width: 35%;
+        left: -100%;
+    }
+    .hotMenu li{
+        font-size: 22px;
+    }
+    .hotMenuRedes i {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        color: black;
+        font-size: 30px;
+        border-radius: 50px;
+        margin-top: 20px;
+        width: 50px;
+        height: 50px;
+        margin-bottom: 30px;
+        transition: scale 0.1s ease-in-out;
     }
 }
 @media (min-width: 700px) and (max-width: 900px) {
@@ -890,6 +974,41 @@ footer{
     .divSugerido a{
         margin-top: 5px;
     }
+
+
+    .nosotros {
+        display: flex;
+        flex-direction: column;
+    }
+    .infoNos {
+        width: 400px;
+        margin-bottom: 20px;
+        border-radius: 5px;
+    }
+    .formContacto{
+        width: 400px;
+        border-radius: 5px;
+    }
+
+
+    .divNav{
+        display: flex;
+    }
+    .divBusqueda input{
+        display: none;
+    }
+    .divBusqueda i{
+        display: none;
+    }
+    .navImg{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .hotMenu {
+        width: 50%;
+        left: -100%;
+    }
+
 }
 @media (min-width: 600px) and (max-width: 700px) {
 
@@ -940,15 +1059,15 @@ footer{
     }
 
     .noticia{
-        flex-direction: column-reverse;
-        text-align: center;
+        flex-direction: row;
+        text-align: left;
     }
     .notDia h3{
-        font-size: 15px;
+        font-size: 18px;
         margin-top: 10px;
     }
     .notDia p{
-        font-size: 10px;
+        font-size: 13px;
         margin-top: 5px;
     }
     .notDia a{
@@ -958,40 +1077,44 @@ footer{
     .noticia img{
         width: 200px;
         height: 200px;
-        margin: auto;
+        margin-left: 20px;
     }
 
     .sugerido{
-        padding: 20px;
+        display: none;
     }
-    .sugerido hr{
-        width: 90%;
-        margin-left: 5%;
-        margin-top: 30px;
-    }
-    .sugerido h3{
-        font-size: 30px;
-    }
-    
-    .divSugerido{
-        flex-direction: column;
-        text-align: center;
-    }
-    .divSugerido img{
-        margin: 10px auto;
-        width: 130px;
-        height: 130px;
-    }
-    .divSugerido div{
+
+    .nosotros {
         display: flex;
         flex-direction: column;
     }
-    
-    .divSugerido h4{
-        font-size: 14px;
+    .infoNos {
+        width: 350px;
+        margin-bottom: 20px;
+        border-radius: 5px;
     }
-    .divSugerido a{
-        margin-top: 5px;
+    .formContacto{
+        width: 350px;
+        border-radius: 5px;
+    }
+
+
+    .divNav{
+        display: flex;
+    }
+    .divBusqueda input{
+        display: none;
+    }
+    .divBusqueda i{
+        display: none;
+    }
+    .navImg{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .hotMenu {
+        width: 60%;
+        left: -100%;
     }
 }
 @media (min-width: 400px) and (max-width: 600px) {
@@ -1012,8 +1135,7 @@ footer{
     .ulNotSecundarias li{
         display: flex;
         flex-direction: column;
-        margin: auto;
-        margin-left: -10px;
+
     }
     .ulNotSecundarias p{
         align-self: center;
@@ -1043,6 +1165,96 @@ footer{
         display: grid;
         grid-template-columns: 1fr;
         text-align: center;
+    }
+
+
+    .divNotMomento{
+        padding: 10px 5px 10px 5px;
+    }
+    .noticia{
+        flex-direction: row;
+        text-align: left;
+        padding: 0;
+    }
+    .notDia h3{
+        font-size: 16px;
+        margin-top: 10px;
+    }
+    .notDia p{
+        font-size: 11px;
+        margin-top: 5px;
+    }
+    .notDia a{
+        font-size: 13px;
+        margin-top: 10px;
+    }
+    .noticia img{
+        width: 175px;
+        height: 175px;
+        margin-left: 5px;
+    }
+
+    .sugerido{
+        display: none;
+    }
+
+    .nosotros {
+        display: flex;
+        flex-direction: column;
+    }
+    .infoNos {
+        width: 250px;
+        margin-bottom: 20px;
+        border-radius: 5px;
+    }
+    .formContacto{
+        width: 250px;
+        border-radius: 5px;
+    }
+
+
+    .divNav{
+        display: flex;
+    }
+    .divBusqueda input{
+        display: none;
+    }
+    .divBusqueda i{
+        display: none;
+    }
+    .navImg{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .navImg img{
+        width: 90%;
+    }
+    .divNav i{
+        font-size: 25px;
+        width: 30px;
+        height: 30px;
+    }
+
+    .hotMenu {
+        width: 60%;
+        left: -100%;
+    }
+    .hotMenu li{
+        font-size: 18px;
+    }
+    .hotMenuRedes i {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        color: black;
+        font-size: 30px;
+        border-radius: 50px;
+        margin-top: 20px;
+        width: 50px;
+        height: 50px;
+        margin-bottom: 30px;
+        transition: scale 0.1s ease-in-out;
     }
 }
 @media (min-width: 300px) and (max-width: 400px) {
@@ -1095,6 +1307,96 @@ footer{
         grid-template-columns: 1fr;
         text-align: center;
     }
+
+
+
+    .divNotMomento{
+        padding: 10px 5px 10px 5px;
+    }
+    .noticia{
+        flex-direction: column-reverse;
+        text-align: center;
+        padding: 0;
+    }
+    .notDia h3{
+        font-size: 16px;
+        margin-top: 10px;
+    }
+    .notDia p{
+        font-size: 11px;
+        margin-top: 5px;
+    }
+    .notDia a{
+        font-size: 13px;
+        margin-top: 10px;
+    }
+    .noticia img{
+        width: 175px;
+        height: 175px;
+        margin: auto;
+    }
+
+    .sugerido{
+        display: none;
+    }
+
+    .nosotros {
+        display: flex;
+        flex-direction: column;
+    }
+    .infoNos {
+        width: 200px;
+        margin-bottom: 20px;
+        border-radius: 5px;
+    }
+    .formContacto{
+        width: 200px;
+        border-radius: 5px;
+    }
+
+
+    .divNav{
+        display: flex;
+    }
+    .divBusqueda input{
+        display: none;
+    }
+    .divBusqueda i{
+        display: none;
+    }
+    .navImg{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .navImg img{
+        width: 80%;
+    }
+    .divNav i{
+        font-size: 25px;
+        width: 30px;
+        height: 30px;
+    }
+    .hotMenu {
+        width: 68%;
+        left: -100%;
+    }
+    .hotMenu li{
+        font-size: 17px;
+    }
+    .hotMenuRedes i {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        color: black;
+        font-size: 25px;
+        border-radius: 50px;
+        margin-top: 20px;
+        width: 40px;
+        height: 40px;
+        margin-bottom: 30px;
+        transition: scale 0.1s ease-in-out;
+    }
 }
 @media (min-width: 100px) and (max-width: 300px) {
     .ulNotSecundarias img {
@@ -1118,5 +1420,96 @@ footer{
     }
     .ulNotSecundarias p{
         align-self: center;
+    }
+
+
+
+    .divNotMomento{
+        padding: 10px 5px 10px 5px;
+    }
+    .noticia{
+        flex-direction: column-reverse;
+        text-align: left;
+        padding: 0;
+    }
+    .notDia h3{
+        font-size: 16px;
+        margin-top: 10px;
+    }
+    .notDia p{
+        font-size: 11px;
+        margin-top: 5px;
+    }
+    .notDia a{
+        font-size: 13px;
+        margin-top: 10px;
+    }
+    .noticia img{
+        width: 175px;
+        height: 175px;
+        margin-left: 5px;
+    }
+
+    .sugerido{
+        display: none;
+    }
+
+    .nosotros {
+        display: flex;
+        flex-direction: column;
+    }
+    .infoNos {
+        width: 150px;
+        margin-bottom: 20px;
+        border-radius: 5px;
+    }
+    .formContacto{
+        width: 150px;
+        border-radius: 5px;
+    }
+
+
+    .divNav{
+        display: flex;
+    }
+    .divBusqueda input{
+        display: none;
+    }
+    .divBusqueda i{
+        display: none;
+    }
+    .navImg{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .navImg img{
+        width: 75%;
+    }
+    .divNav i{
+        font-size: 25px;
+        width: 30px;
+        height: 30px;
+    }
+
+    .hotMenu {
+        width: 68%;
+        left: -100%;
+    }
+    .hotMenu li{
+        font-size: 17px;
+    }
+    .hotMenuRedes i {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        color: black;
+        font-size: 25px;
+        border-radius: 50px;
+        margin-top: 20px;
+        width: 40px;
+        height: 40px;
+        margin-bottom: 30px;
+        transition: scale 0.1s ease-in-out;
     }
 }
