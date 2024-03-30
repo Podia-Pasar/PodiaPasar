@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Podia pasar</title>
+    <link rel="stylesheet" href="podiapasar.css">
+    <script src="https://kit.fontawesome.com/9be33e87c9.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <section class="nav">
+            <div class="divNav">
+                <i class="fa-solid fa-bars" id="hotMenuA" onclick="hotMenuA()"></i>
+                <i class="fa-solid fa-xmark" id="hotMenuC" onclick="hotMenuC()"></i>
+                <div class="hotMenu">
+                    <h3>Secciones</h3>
+                    <ul>
+                        <li><i class="fa-solid fa-flask"></i></i> Ciencia y tecnología</li>
+                        <li><i class="fa-solid fa-heart"></i></i> Conciencia y salud</li>
+                        <li><i class="fa-solid fa-football"></i></i> Deportes</li>
+                        <li><i class="fa-solid fa-pen"></i> Cultura y diseño</li>
+                        <li><i class="fa-solid fa-clock"></i></i> Nuestro futuro</li>
+                        <li><i class="fa-solid fa-landmark"></i></i> Politica y economia</li>
+                        <li><i class="fa-solid fa-brain"></i> Temas para pensar</li>
+                    </ul>
+                    <hr class="hrMenu">
+                    <h3 class="hotMenuRedesH3">Redes</h3>
+                    <div class="hotMenuRedes">
+                        <a href=""><i class="fa-brands fa-tiktok" id="tiktok"></i></a>
+                        <a href="https://www.instagram.com/podiapasar?igsh=MWQ4Nm54bG41aDZqNA=="><i class="fa-brands fa-instagram" id="ig"></i></a>
+                        <a href=""><i class="fa-brands fa-twitter" id="twitter"></i></a>
+                    </div>
+                </div>
+                <div class="navImg">
+                    <img src="fotos\logo.png" alt="logo" onclick="inicio()">
+                </div>
+                <div class="divBusqueda">
+                    <input type="text">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+            </div>
+        </section>
+    </header>
+    <main>
+        <section class="secNoticia">
+            <div class="infoPrincipal">
+                <div class="infoPrincipalTexto">
+                    <h2>Milei confirmó que participará de un acto de Vox en España</h2>
+                    <h3>El presidente asistirá a la convención anual del partido de ultraderecha, que se realizarpa el próximo 18 y 19 de mayo en Madrid.</h3>
+                    <div class="infoPrincipalRedes">
+                        <h4>Mas informacion en nuestras redes.</h4>
+                        <div>
+                            <a href=""><i class="fa-brands fa-tiktok" id="tiktok"></i></a>
+                            <a href="https://www.instagram.com/podiapasar?igsh=MWQ4Nm54bG41aDZqNA=="><i class="fa-brands fa-instagram" id="ig"></i></a>
+                            <a href=""><i class="fa-brands fa-twitter" id="twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <img src="fotos\milei.jpg" alt="milei">
+            </div>
+            <hr>
+            <div class="infoSecundaria">
+                <p>El presidente Javier Milei participará de la convención anual de Vox, "Europa Viva 24", que este año se celebrará el 18 y 19 
+                    de mayo en Madrid, España, como impulso para las elecciones europeas de junio próximo."Ahí volveré a estar con Ustedes querido AMIGO...!!! 
+                    VIVA LA LIBERTAD CARAJO...!!!", fue el posteo que publicó en X el mandatario argentino como respuesta a la convocatoria del líder del partido 
+                    de ultraderecha español, Santiago Abascal. "Será un placer y un orgullo recibirte de nuevo querido Javier Milei", le contestó el también miembro 
+                    del Parlamento.
+                </p>
+                <p>
+                    Milei ya participó presencialmente en la convención de octubre de 2022 en Madrid como líder de su espacio, La Libertad Avanza, la formación próxima 
+                    a Vox con la que alcanzó la presidencia el 10 de diciembre pasado, en una toma de posesión a la que asistió Abascal. Para esta ocasión, Vox eligió 
+                    el Palacio Vistalegre, un recinto con menor capacidad que en ediciones anteriores pero no exento de simbolismo para el partido español, ya que fue 
+                    la sede, en 2018, de su primera gran movilización, cuando aún estaba fuera de las instituciones. "¡Será un día histórico para la España que no se 
+                    rinde!", aseguró Abascal.
+                </p>
+            </div>
+            <hr>
+        </section>
+        <section class="ultimasNoticias hidden">
+            <div class="divNoticias">
+                <div class="titulo">
+                    <i class="fa-solid fa-clock"></i><h2>Ultimas noticias</h2>
+                </div>
+                <div class="noticia">
+                    <div class="notDia">   
+                        <h3>Kicillof enviará 400 policías para ayudar a combatir el narcotráfico</h3>
+                        <p>Además de la Policía, se enviarán 80 patrulleros, tres minibuses, la división de motos tripuladas de alta cilindrada, tres helicópteros y drones.</p>
+                        <a href="">Haz click para saber mas.</a>
+                    </div>
+                    <img src="fotos\kisilof.jpeg" alt="kisilof">
+                </div>
+                <div class="noticia">
+                    <div class="notDia">   
+                        <h3>6 de cada 10 niños y adolescentes escolarizados en Argentina son pobres</h3>
+                        <p>Un informe de la UCA revela el complejo panorama que atraviesan los jóvenes argentinos que asisten a establecimientos educativos.</p>
+                        <a href="">Haz click para saber mas.</a>
+                    </div>
+                    <img src="fotos\escuela.jpg" alt="escuela">
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <hr class="hrFooter">
+        <section class="footer">
+            <div class="secFooter">
+                <ul>
+                        <li><i class="fa-solid fa-flask"></i></i> Ciencia y tecnología</li>
+                        <li><i class="fa-solid fa-heart"></i></i> Conciencia y salud</li>
+                        <li><i class="fa-solid fa-football"></i></i> Deportes</li>
+                        <li><i class="fa-solid fa-pen"></i> Cultura y diseño</li>
+                        <li><i class="fa-solid fa-clock"></i></i> Nuestro futuro</li>
+                        <li><i class="fa-solid fa-landmark"></i></i> Politica y economia</li>
+                        <li><i class="fa-solid fa-brain"></i> temas para pensar</li>
+                </ul>
+            </div>
+            <div class="redesFooter">
+                <img src="fotos\logo.png" alt="">
+                <hr>
+                <div class="linksFooter">
+                    <a href=""><i class="fa-brands fa-tiktok" id="tiktok"></i></a>
+                    <a href="https://www.instagram.com/podiapasar?igsh=MWQ4Nm54bG41aDZqNA=="><i class="fa-brands fa-instagram" id="ig"></i></a>
+                    <a href=""><i class="fa-brands fa-twitter" id="twitter"></i></a>
+                </div>
+            </div>
+            <div>
+    
+            </div>
+        </section>
+        <hr class="hrFooter">
+    </footer>
+    <script src="podiapasar.js">
+    </script>
+</body>
+</html>
