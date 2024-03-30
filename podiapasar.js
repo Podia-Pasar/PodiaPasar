@@ -1,3 +1,12 @@
+function inicio(){
+    window.location.href = "index.html";
+}
+function milei(){
+    window.location.href = "noticia.html";
+}
+
+
+
 var menuNav = document.querySelector(".hotMenu");
 var barras = document.getElementById("hotMenuA");
 var cerrar = document.getElementById("hotMenuC");
@@ -12,3 +21,14 @@ function hotMenuC() {
     cerrar.style.display = "none";
     menuNav.classList.toggle("active");
 }
+
+
+const ultimasNoticias = document.querySelector('.ultimasNoticias');
+
+window.addEventListener('scroll', () => {
+  const { scrollTop, clientHeight, scrollHeight } = document.documentElement;
+
+  if (scrollTop + clientHeight >= scrollHeight - 100) {
+    ultimasNoticias.classList.remove('hidden');
+  }
+});
