@@ -4,6 +4,9 @@ function inicio(){
 function milei(){
     window.location.href = "noticia.html";
 }
+function milei{
+    windows.location.href = "nuevos billetes.html";
+}
 
 
 
