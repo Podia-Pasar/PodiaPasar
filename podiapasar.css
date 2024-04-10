@@ -28,10 +28,13 @@ a{
 }
 .navImg{
     text-align: center;
+    height: 70px;
+    width: auto;
 }
 .navImg img{
     display: inline-block;
     height: 70px;
+    width: auto;
 }
 .navImg img:hover{
     cursor: pointer;
