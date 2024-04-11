@@ -1,13 +1,10 @@
 function inicio(){
-    window.location.href = "index.html";
-}
-function milei(){
-    window.location.href = "noticia.html";
-}
-function milei{
-    windows.location.href = "nuevos billetes.html";
-}
+  window.location.href = "index.html";
+};
 
+function billetes(){
+  windows.location.href = "nuevos billetes.html";
+};
 
 
 var menuNav = document.querySelector(".hotMenu");

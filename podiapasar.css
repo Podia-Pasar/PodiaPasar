@@ -3,6 +3,12 @@
     margin: 0;
     border: 0;
 }
+p{
+    font-family: "Open Sans", sans-serif;
+}
+h1, h2, h3, h4, h5{
+    font-family: "League Spartan", sans-serif;
+}
 a{
     color: inherit;
     text-decoration: none;
@@ -28,13 +34,10 @@ a{
 }
 .navImg{
     text-align: center;
-    height: 70px;
-    width: auto;
 }
 .navImg img{
     display: inline-block;
     height: 70px;
-    width: auto;
 }
 .navImg img:hover{
     cursor: pointer;
@@ -103,7 +106,7 @@ a{
 }
 .hotMenu li:hover{
     cursor: pointer;
-    color: #d81e5b;
+    color: #d11653;
     scale: 1.02;
 }
 .hotMenu i{
@@ -213,7 +216,7 @@ main{
     margin-top: 20px;
 }
 .principal button{
-    background-color: #d81e5b;
+    background-color: #d11653;
     color: white;
     font-size: 20px;
     padding: 10px;
@@ -278,13 +281,13 @@ main{
     flex-direction: row;
     justify-content: left;
     align-items: center;
-    color: #59c9a5;
+    color: #4d7d6b;
     font-size: 20px;
     margin-bottom: 30px;
 }
 .titulo i {
     animation: rotacion 3s linear infinite; 
-    color: #59c9a5;
+    color: #4d7d6b;
     font-size: 35px;
     margin-right: 20px;
 }
@@ -322,7 +325,7 @@ main{
     margin-top: 20px;
 }
 .notDia a{
-    color: #ff9500;
+    color: #f17b00;
     font-size: 20px;
     text-decoration: none;
 }
@@ -418,7 +421,7 @@ main{
 }
 .infoNos hr{
     width: 30%;
-    background-color: #d81e5b;
+    background-color: #d11653;
     border: none;
     border-radius: 5px;
     height: 3px;
@@ -430,7 +433,7 @@ main{
     margin-top: 10px;
 }
 .infoNos button{
-    background-color: #d81e5b;
+    background-color: #d11653;
     color: white;
     font-size: 20px;
     padding: 10px;
@@ -508,14 +511,14 @@ main{
 .formContacto hr{
     width: 30%;
     margin: auto;
-    background-color: #d81e5b;
+    background-color: #d11653;
     border: none;
     border-radius: 5px;
     height: 3px;
     margin-top: 10px;
 }
 .formContacto button{
-    background-color: #d81e5b;
+    background-color: #d11653;
     color: white;
     font-size: 20px;
     padding: 10px;
@@ -560,7 +563,7 @@ footer{
 }
 .footer li:hover{
     cursor: pointer;
-    color: #d81e5b;
+    color: #d11653;
     scale: 1.02;
 }
 .footer i{
@@ -581,7 +584,7 @@ footer{
 .redesFooter hr{
     width: 50%;
     margin:  10px auto;
-    background-color: #d81e5b;
+    background-color: #d11653;
     border: none;
     border-radius: 5px;
     height: 3px;
@@ -1219,7 +1222,7 @@ footer{
         margin-top: 10px;
     }
     .principal button{
-        background-color: #d81e5b;
+        background-color: #d11653;
         color: white;
         font-size: 15px;
         padding: 5px;
@@ -1360,7 +1363,7 @@ footer{
         margin-top: 10px;
     }
     .principal button{
-        background-color: #d81e5b;
+        background-color: #d11653;
         color: white;
         font-size: 15px;
         padding: 5px;
@@ -1603,6 +1606,7 @@ footer{
     grid-template-columns: 1fr 1fr;
     padding: 50px;
     height: 600px;
+    gap: 20px;
 }
 .infoPrincipal img{
     border-radius: 10px;
@@ -1610,6 +1614,7 @@ footer{
     height: 600px;
     width: 600px;
     margin: 20px auto;
+    object-fit: cover;
 }
 
 
@@ -1642,6 +1647,10 @@ footer{
     align-self: center;
     color: black;
     margin-right: auto;
+}
+.infoSecundaria h5{
+    font-size: 25px;
+    margin-top: 20px;
 }
 .infoPrincipalRedes div{
     display: flex;
@@ -1694,6 +1703,7 @@ footer{
     margin-left: 20%;
     font-size: 20px;
     margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .divNoticias{
@@ -1703,4 +1713,30 @@ footer{
 
 .hidden {
     display: none;
-  }
+}
+.infoSecundaria ul{
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0;
+}
+.infoSecundaria li{
+    width: 60%;
+    margin-left: 20%;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: left;
+    list-style: circle;
+}
+
+
+
+.noticiasSection{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.noticiaSection img{
+    width: 400px;
+    width: 400px;
+    object-fit: cover;
+}
