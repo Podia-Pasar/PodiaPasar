@@ -27,6 +27,7 @@ a{
     height: 70px;
     width: 80%;
 
+    top: 0;
     align-items: center;
     justify-content: center;
     position: fixed;
