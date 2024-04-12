@@ -3,10 +3,10 @@
     margin: 0;
     border: 0;
 }
-body {
+body{
   overflow-x: hidden;
 }
-p{
+p, a ,li{
     font-family: "Open Sans", sans-serif;
 }
 h1, h2, h3, h4, h5{
