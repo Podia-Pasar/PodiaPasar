@@ -3,10 +3,10 @@
     margin: 0;
     border: 0;
 }
-body{
-  overflow-x: hidden;
+body {
+    overflow-x: hidden;
 }
-p, a ,li{
+p{
     font-family: "Open Sans", sans-serif;
 }
 h1, h2, h3, h4, h5{
@@ -29,8 +29,8 @@ a{
 
     height: 70px;
     width: 80%;
-
     top: 0;
+
     align-items: center;
     justify-content: center;
     position: fixed;
@@ -1191,12 +1191,12 @@ footer{
         flex-direction: column;
     }
     .infoNos {
-        width: 200px;
+        width: 400px;
         margin-bottom: 20px;
         border-radius: 5px;
     }
     .formContacto{
-        width: 200px;
+        width: 400px;
         border-radius: 5px;
     }
 
@@ -1245,6 +1245,33 @@ footer{
         height: 40px;
         margin-bottom: 30px;
         transition: scale 0.1s ease-in-out;
+    }
+
+    .linksFooter{
+        gap: 16px;
+    }
+    .linksFooter i {
+        font-size: 23px;
+        width: 40px;
+        height: 40px;
+    }
+    .redesFooter img{
+        width: 180px;
+    }
+
+    .footer{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .footer ul{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 10px;
+    }
+    
+    .footer li{
+        margin: auto;
     }
 }
 @media (min-width: 400px) and (max-width: 600px) {
@@ -1350,12 +1377,12 @@ footer{
         flex-direction: column;
     }
     .infoNos {
-        width: 200px;
+        width: 300px;
         margin-bottom: 20px;
         border-radius: 5px;
     }
     .formContacto{
-        width: 200px;
+        width: 300px;
         border-radius: 5px;
     }
 
@@ -1404,6 +1431,34 @@ footer{
         height: 40px;
         margin-bottom: 30px;
         transition: scale 0.1s ease-in-out;
+    }
+
+
+    .linksFooter{
+        gap: 16px;
+    }
+    .linksFooter i {
+        font-size: 23px;
+        width: 40px;
+        height: 40px;
+    }
+    .redesFooter img{
+        width: 180px;
+    }
+
+    .footer{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .footer ul{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 10px;
+    }
+    
+    .footer li{
+        margin: auto;
     }
 }
 @media (min-width: 300px) and (max-width: 400px) {
@@ -1562,6 +1617,32 @@ footer{
         height: 40px;
         margin-bottom: 30px;
         transition: scale 0.1s ease-in-out;
+    }
+
+    .linksFooter{
+        gap: 16px;
+    }
+    .linksFooter i {
+        font-size: 23px;
+        width: 40px;
+        height: 40px;
+    }
+    .redesFooter img{
+        width: 180px;
+    }
+
+    .footer{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: 0;
+    }
+    
+    .footer ul{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 10px;
+        margin: 0;
     }
 }
 @media (min-width: 100px) and (max-width: 300px) {
