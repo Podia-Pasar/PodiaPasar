@@ -627,7 +627,7 @@ footer{
 .secNoticia hr{
     width: 60%;
     margin-left: 20%;
-    height: 3px;
+    height: 2px;
     background-color: black;
     border: none;
     border-radius: 5px;
@@ -638,7 +638,7 @@ footer{
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding: 50px;
-    height: 600px;
+    height: 640px;
     gap: 20px;
 }
 .infoPrincipal img{
@@ -646,8 +646,9 @@ footer{
     box-shadow: 4px 4px 8px rgb(0, 0, 0, 0.5),-4px 4px 8px rgb(0, 0, 0, 0.5);
     height: 600px;
     width: 600px;
-    margin: 20px auto;
     object-fit: cover;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 
@@ -657,10 +658,10 @@ footer{
     height: 600px;
 }
 .infoPrincipal h2{
-    font-size: 50px;
+    font-size: 45px;
 }
 .infoPrincipal h3{
-    margin-top: 50px;
+    margin-top: 40px;
     font-size: 30px;
     font-weight: lighter;
 }
@@ -737,11 +738,6 @@ footer{
     font-size: 20px;
     margin-top: 20px;
     margin-bottom: 20px;
-}
-
-.divNoticias{
-    width: 80%;
-    margin-left: 10%;
 }
 
 .hidden {
@@ -829,11 +825,6 @@ footer{
 
 
 
-
-
-
-
-
 @media (min-width: 1400px) and (max-width: 1600px) {
     .ulNotSecundarias img {
         width: 220px;
@@ -892,6 +883,35 @@ footer{
     }
     .redesFooter img{
         width: 220px;
+    }
+
+
+    .infoPrincipal img{
+        height: 550px;
+        width: 550px;
+    }
+    .infoPrincipal{
+        height: auto;
+    }
+    .infoPrincipalTexto{
+        height: 550px;
+    }
+    .infoPrincipal h2{
+        font-size: 40px;
+    }
+    .infoPrincipal h3{
+        font-size: 28px;
+        margin-top: 20px;
+    }
+    .infoPrincipal h4{
+        font-size: 22px;
+    }
+
+
+    .secNoticia hr{
+        width: 80%;
+        margin: 30px 0;
+        margin-left: 10%;
     }
 }
 @media (min-width: 1200px) and (max-width: 1400px) {
@@ -1004,6 +1024,36 @@ footer{
     .noticiaSection img{
         height: 350px;
         width: 350px;
+    }
+
+
+
+
+    .infoPrincipal img{
+        height: 400px;
+        width: 400px;
+    }
+    .infoPrincipal{
+        height: 400px;
+    }
+    .infoPrincipalTexto{
+        height: 400px;
+    }
+    .infoPrincipal h2{
+        font-size: 35px;
+    }
+    .infoPrincipal h3{
+        font-size: 22px;
+        margin-top: 20px;
+    }
+    .infoPrincipal h4{
+        font-size: 18px;
+    }
+
+    .secNoticia hr{
+        width: 80%;
+        margin: 30px 0;
+        margin-left: 10%;
     }
 }
 @media (min-width: 900px) and (max-width: 1200px) {
@@ -1159,6 +1209,53 @@ footer{
     .noticiaSection img{
         height: 350px;
         width: 350px;
+    }
+
+
+    .infoPrincipal img{
+        height: 600px;
+        width: 600px;
+    }
+    .infoPrincipal{
+        display: flex;
+        flex-direction: column-reverse;
+        height: auto;
+    }
+    .infoPrincipalTexto{
+        height: auto;
+    }
+    .infoPrincipal h2{
+        font-size: 40px;
+        margin-top: 30px;
+    }
+    .infoPrincipal h3{
+        font-size: 25px;
+        margin-top: 20px;
+    }
+    .infoPrincipal h4{
+        font-size: 18px;
+    }
+
+
+    .infoSecundaria p{
+        width: 70%;
+        margin-left: 15%;
+        font-size: 20px;
+    }
+    .infoSecundaria li{
+        width: 70%;
+        margin-left: 15%;
+        font-size: 20px;
+    }
+    .secNoticia hr{
+        width: 70%;
+        margin: 35px 0;
+        margin-left: 15%;
+    }
+    .secNoticia hr{
+        width: 80%;
+        margin: 30px 0;
+        margin-left: 10%;
     }
 }
 @media (min-width: 700px) and (max-width: 900px) {
@@ -1338,6 +1435,52 @@ footer{
     .noticiaSection img{
         height: 320px;
         width: 320px;
+    }
+
+
+
+    .infoPrincipal img{
+        height: 500px;
+        width: 500px;
+    }
+    .infoPrincipal{
+        display: flex;
+        flex-direction: column-reverse;
+        height: auto;
+    }
+    .infoPrincipalTexto{
+        height: auto;
+    }
+    .infoPrincipal h2{
+        font-size: 35px;
+        margin-top: 30px;
+    }
+    .infoPrincipal h3{
+        font-size: 23px;
+        margin-top: 20px;
+    }
+    .infoPrincipal h4{
+        font-size: 18px;
+    }
+    .infoPrincipalRedes{
+        margin-top: 50px;
+    }
+
+
+    .infoSecundaria p{
+        width: 80%;
+        margin-left: 10%;
+        font-size: 17px;
+    }
+    .infoSecundaria li{
+        width: 80%;
+        margin-left: 10%;
+        font-size: 17px;
+    }
+    .secNoticia hr{
+        width: 80%;
+        margin: 30px 0;
+        margin-left: 10%;
     }
 }
 @media (min-width: 600px) and (max-width: 700px) {
@@ -1544,6 +1687,53 @@ footer{
 
     .tituloSection h2{
         font-size: 40px;
+    }
+
+
+    
+
+    .infoPrincipal img{
+        height: 450px;
+        width: 450px;
+    }
+    .infoPrincipal{
+        display: flex;
+        flex-direction: column-reverse;
+        height: auto;
+    }
+    .infoPrincipalTexto{
+        height: auto;
+    }
+    .infoPrincipal h2{
+        font-size: 33px;
+        margin-top: 20px;
+    }
+    .infoPrincipal h3{
+        font-size: 21px;
+        margin-top: 15px;
+    }
+    .infoPrincipal h4{
+        font-size: 18px;
+    }
+    .infoPrincipalRedes{
+        margin-top: 50px;
+    }
+
+
+    .infoSecundaria p{
+        width: 80%;
+        margin-left: 10%;
+        font-size: 17px;
+    }
+    .infoSecundaria li{
+        width: 80%;
+        margin-left: 10%;
+        font-size: 17px;
+    }
+    .secNoticia hr{
+        width: 80%;
+        margin: 25px 0;
+        margin-left: 10%;
     }
 }
 @media (min-width: 400px) and (max-width: 600px) {
@@ -1758,6 +1948,69 @@ footer{
     .tituloSection h2{
         font-size: 35px;
     }
+
+
+
+    .infoPrincipal img{
+        height: 350px;
+        width: 350px;
+        margin: 0;
+        display: block;
+        align-self: center;
+    }
+    .infoPrincipal{
+        display: flex;
+        flex-direction: column-reverse;
+        height: auto;
+        margin: 0;
+        padding: 10px;
+    }
+    .infoPrincipalTexto{
+        height: auto;
+        margin: 0;
+        width: 100%;
+    }
+    .infoPrincipal h2{
+        font-size: 25px;
+        margin-top: 20px;
+    }
+    .infoPrincipal h3{
+        font-size: 18px;
+        margin-top: 15px;
+    }
+    .infoPrincipal h4{
+        font-size: 18px;
+    }
+    .infoPrincipalRedes {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        flex-direction: column;
+        margin-top: 50px;
+    }
+    .infoPrincipalRedes h4 {
+        margin: 0;
+    }
+    .infoPrincipalRedes i{
+        margin-top: 20px;
+    }
+
+    .infoSecundaria p{
+        width: 90%;
+        margin-left: 5%;
+        font-size: 17px;
+    }
+    .infoSecundaria li{
+        width: 90%;
+        margin-left: 5%;
+        font-size: 17px;
+    }
+    .secNoticia hr{
+        width: 90%;
+        margin: 20px 0;
+        margin-left: 5%;
+    }
 }
 @media (min-width: 300px) and (max-width: 400px) {
     main{
@@ -1970,6 +2223,69 @@ footer{
     .tituloSection h2{
         font-size: 35px;
     }
+
+
+    .infoPrincipal img{
+        height: 250px;
+        width: 250px;
+        margin: 0;
+        display: block;
+        align-self: center;
+    }
+    .infoPrincipal{
+        display: flex;
+        flex-direction: column-reverse;
+        height: auto;
+        margin: 0;
+        padding: 10px;
+    }
+    .infoPrincipalTexto{
+        height: auto;
+        margin: 0;
+        width: 100%;
+    }
+    .infoPrincipal h2{
+        font-size: 22px;
+        margin-top: 20px;
+    }
+    .infoPrincipal h3{
+        font-size: 15px;
+        margin-top: 15px;
+    }
+    .infoPrincipal h4{
+        font-size: 15px;
+    }
+    .infoPrincipalRedes {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        flex-direction: column;
+        margin-top: 50px;
+    }
+    .infoPrincipalRedes h4 {
+        margin: 0;
+    }
+    .infoPrincipalRedes i{
+        margin-top: 20px;
+    }
+
+
+    .infoSecundaria p{
+        width: 90%;
+        margin-left: 5%;
+        font-size: 15px;
+    }
+    .infoSecundaria li{
+        width: 90%;
+        margin-left: 5%;
+        font-size: 15px;
+    }
+    .secNoticia hr{
+        width: 90%;
+        margin: 15px 0;
+        margin-left: 5%;
+    }
 }
 @media (min-width: 100px) and (max-width: 300px) {
     .ulNotSecundarias img {
@@ -2058,7 +2374,8 @@ footer{
         margin-right: auto;
     }
     .navImg img{
-        width: 75%;
+        width: 100%;
+        height: 50px;
     }
     .divNav i{
         font-size: 25px;
@@ -2068,7 +2385,7 @@ footer{
 
     .hotMenu {
         width: 100%;
-        left: -100%;
+        left: -120%;
     }
     .hotMenu li{
         font-size: 17px;
@@ -2113,5 +2430,68 @@ footer{
 
     .tituloSection h2{
         font-size: 35px;
+    }
+
+
+    
+    .infoPrincipal img{
+        height: 250px;
+        width: 250px;
+        margin: 0;
+        display: block;
+        align-self: center;
+    }
+    .infoPrincipal{
+        display: flex;
+        flex-direction: column-reverse;
+        height: auto;
+        margin: 0;
+        padding: 10px;
+    }
+    .infoPrincipalTexto{
+        height: auto;
+        margin: 0;
+        width: 100%;
+    }
+    .infoPrincipal h2{
+        font-size: 22px;
+        margin-top: 20px;
+    }
+    .infoPrincipal h3{
+        font-size: 15px;
+        margin-top: 15px;
+    }
+    .infoPrincipal h4{
+        font-size: 15px;
+    }
+    .infoPrincipalRedes {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        flex-direction: column;
+        margin-top: 50px;
+    }
+    .infoPrincipalRedes h4 {
+        margin: 0;
+    }
+    .infoPrincipalRedes i{
+        margin-top: 20px;
+    }
+
+
+    .infoSecundaria p{
+        width: 90%;
+        margin-left: 5%;
+        font-size: 15px;
+    }
+    .infoSecundaria li{
+        width: 90%;
+        margin-left: 5%;
+        font-size: 15px;
+    }
+    .secNoticia hr{
+        width: 90%;
+        margin-left: 5%;
     }
 }
