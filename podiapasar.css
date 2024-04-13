@@ -1541,6 +1541,10 @@ footer{
         height: 280px;
         width: 280px;
     }
+
+    .tituloSection h2{
+        font-size: 40px;
+    }
 }
 @media (min-width: 400px) and (max-width: 600px) {
     main{
@@ -1750,6 +1754,10 @@ footer{
         height: 370px;
         width: 370px;
     }
+
+    .tituloSection h2{
+        font-size: 35px;
+    }
 }
 @media (min-width: 300px) and (max-width: 400px) {
     main{
@@ -1958,6 +1966,10 @@ footer{
         width: 250px;
         margin: 5px auto;
     }
+
+    .tituloSection h2{
+        font-size: 35px;
+    }
 }
 @media (min-width: 100px) and (max-width: 300px) {
     .ulNotSecundarias img {
@@ -2074,5 +2086,32 @@ footer{
         height: 40px;
         margin-bottom: 30px;
         transition: scale 0.1s ease-in-out;
+    }
+
+
+    .noticiasSection hr{
+        width: 80%;
+        margin-left: 10%;
+    }
+    .noticiaSection div{
+        flex-direction: column;
+    }
+    .noticiaSection div div h3{
+        font-size: 20px;
+    }
+    .noticiaSection div div p{
+        font-size: 15px;
+    }
+    .noticiaSection div div a{
+        font-size: 16PX;
+    }
+    .noticiaSection img{
+        height: 250px;
+        width: 250px;
+        margin: 5px auto;
+    }
+
+    .tituloSection h2{
+        font-size: 35px;
     }
 }
