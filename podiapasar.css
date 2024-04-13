@@ -313,6 +313,7 @@ main{
     border-radius: 5px;
     box-shadow: 4px 4px 8px rgb(0, 0, 0, 0.5), -4px 4px 8px rgb(0, 0, 0, 0.5);
     margin-left: 50px;
+    margin-right: 10px;
 }
 
 .notDia{
@@ -784,7 +785,9 @@ footer{
 .salud{
     color: #179b5b;
 }
-
+.deportes{
+    color: #f17b00;
+}
 
 
 
