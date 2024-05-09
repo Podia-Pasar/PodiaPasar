@@ -688,6 +688,14 @@ footer{
     font-size: 25px;
     margin-top: 20px;
 }
+
+.infoSecundaria img{
+    width: 250px;
+    height:250px;
+    object-fit: cover;
+}
+
+
 .infoPrincipalRedes div{
     display: flex;
     justify-content: center;
@@ -762,7 +770,6 @@ footer{
 }
 
 
-
 .noticiasSection{
     display: flex;
     flex-direction: column;
@@ -790,9 +797,23 @@ footer{
 .deportes{
     color: #f17b00;
 }
+.cultura{
+    color: #d615da;
+}
+.pensar{
+    color:#9ecadf;
+}
+.futuro{
+    color: #7474df;
+}
+.ciencia{
+    color: #179b5b;
+}
 
-
-
+.noticiaSection{
+    display: flex;
+    justify-content: left;
+}
 .noticiaSection div{
     display: flex;
     flex-direction: row;
