@@ -1,0 +1,277 @@
+*{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+p{
+    font-family: "Open Sans", sans-serif;
+}
+h1, h2, h3, h4, h5{
+    font-family: "League Spartan", sans-serif;
+}
+
+
+.nav {
+    display: flex;
+    justify-content: center;
+}
+.navDiv{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: rgb(255, 255, 255);
+
+    width: 80%;
+
+    align-items: center;
+    justify-content: center;
+}
+.navDivImg{
+    text-align: center;
+}
+.navDivImg img{
+    display: inline-block;
+    height: 70px;
+}
+.navImg img:hover{
+    cursor: pointer;
+}
+
+.navDiv i{
+    font-size: 30px;
+    margin-left: 15px;
+    width: 30px;
+    height: 30px;
+}
+.navDIv i:hover{
+    cursor: pointer;
+}
+
+.navDivLista ul{
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    font-size: 25px;
+    font-weight: bold;
+    gap: 30px;
+}
+
+  
+.navDivLista li:hover {
+    cursor: pointer;
+    color: #d11653;
+}
+
+
+
+.navDivSeccionesHotMenu {
+    left: -50%;
+    top: 70px;
+    background-color: rgb(0, 0, 0, 0.9);
+    width: 20%;
+    color: rgb(255, 255, 255);
+    padding: 20px;
+    transition: left 0.1s ease-in 0.1s;;
+    position: fixed;
+}
+
+#hotMenuA:hover, #hotMenuC:hover{
+    cursor: pointer;
+}
+#hotMenuC{
+    display: none;
+}
+
+
+.navDivSeccionesHotMenu h3{
+    font-size: 40px;
+}
+
+.navDivSeccionesHotMenu li{
+    font-size: 25px;
+    margin-top: 10px;
+    transition: scale 0.1s ease-in;
+}
+
+.navDivSeccionesHotMenu a{
+    text-decoration: none;
+    color: white;
+}
+
+.navDivSeccionesHotMenu a:hover{
+    cursor: pointer;
+    color: #d11653;
+    scale: 1.02;
+}
+
+.navDivSeccionesHotMenu i{
+    font-size: 20px;
+}
+
+.hotMenuRedesH3{
+    margin-top: 50PX;
+    text-align: center;
+}
+
+.hotMenuRedes {
+    display: flex;
+    justify-content: space-between; 
+    width: 50%;
+    margin: 0 auto; 
+}
+
+.hotMenuRedes i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    color: black;
+    font-size: 30px;
+    border-radius: 50px;
+    margin-top: 20px;
+    width: 50px;
+    height: 50px;
+    margin-bottom: 30px;
+    transition: scale 0.1s ease-in-out;
+}
+.hotMenuRedes i:hover{
+    color: rgb(255, 255, 255);
+    scale: 1.1;
+    box-shadow: 4px 4px 8px rgba(255, 255, 255, 0.5), -4px 4px 8px rgba(255, 255, 255, 0.5);
+}
+
+#ig:hover{
+    background-color: #405DE6;
+}
+#twitter:hover{
+    background-color: #00acee;
+}
+
+.hrMenu{
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 50px;
+    border-radius: 5px;
+    height: 3px;
+    border: none;
+    background-color: rgb(255, 255, 255);
+}
+
+
+
+
+main{
+    width: 50%;
+    margin-left: 25%;
+}
+
+.secciones hr{
+    width: 100%;
+    height: 2px;
+    background-color: rgb(138, 138, 138);
+    border: none;
+    border-radius: 5px;
+    margin: 50px 0;
+}
+
+.secciones{
+    width: 80%;
+    margin-left: 10%;
+}
+
+.secciones h2{
+    font-size: 50px;
+    margin: 50px 0;
+    text-align: center;
+}
+
+.divSecciones{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+.divSecciones img{
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 4px 4px 8px rgb(0, 0, 0, 0.8), -4px 4px 8px rgb(0, 0, 0, 0.8);
+}
+.divSecciones div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.divSecciones h3{
+    font-size: 30px;
+}
+.divSecciones a{
+    color: #d11653;
+    font-size: 25px;
+    text-decoration: none;
+}
+
+
+
+.hrFooter{
+    width: 80%;
+    margin: 20px 0;
+    margin-left: 10%;
+    height: 2px;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(138, 138, 138);
+}
+
+.secFooter{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 50px;
+}
+
+.divRedes img{
+    width: 300px;
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+}
+.divRedes hr{
+    width: 25%;
+    height: 2px;
+    border: none;
+    background-color: #d11653;
+    border-radius: 50px;
+    margin: 10px 0;
+    margin-left: 37.5%;
+}
+.linksFooter{
+    font-size: 40px;
+    text-align: center;
+    text-decoration: none;
+}
+.linksFooter a{
+    color: black;
+}
+.linksFooter i{
+    padding: 10px;
+    border-radius: 50px;
+}
+.linksFooter i:hover{
+    scale: 1.1;
+    background-color: none;
+}
+
+.divSeccionesFooter h2{
+    font-size: 40px;
+}
+.divSeccionesFooter ul{
+    margin-left: 50px;
+    font-size: 25px;
+
+}
+.divSeccionesFooter a{
+    text-decoration: none;
+    color: black;
+}
+.divSeccionesFooter a:hover{
+    color: #d11653;
+}
