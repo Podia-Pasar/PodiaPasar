@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Podia pasar</title>
+    <link rel="stylesheet" href="podiapasar.css">
+    <script src="https://kit.fontawesome.com/9be33e87c9.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <section class="nav">
+            <div class="navDiv">
+                <div class="navDivSecciones">
+                    <i class="fa-solid fa-bars" id="hotMenuA" onclick="hotMenuA()"></i>
+                    <i class="fa-solid fa-xmark" id="hotMenuC" onclick="hotMenuC()"></i>
+                    <div class="navDivSeccionesHotMenu" id="hotMenu">
+                        <h3>Secciones</h3>
+                    <ul>
+                        <li><a href="">Ciencia y tecnología</a></li>
+                        <li><a href="">Conciencia y salud</a></li>
+                        <li><a href="">Deportes</a></li>
+                        <li><a href="">Cultura y diseño</a></li>
+                        <li><a href="">Nuestro futuro</a></li>
+                        <li><a href="">Politica y economia</a></li>
+                        <li><a href="">Temas para pensar</a></li>
+                    </ul>
+                    <hr class="hrMenu">
+                    <h3 class="hotMenuRedesH3">Redes</h3>
+                    <div class="hotMenuRedes">
+                        <a href="https://www.instagram.com/podiapasar?igsh=MWQ4Nm54bG41aDZqNA=="><i class="fa-brands fa-instagram" id="ig"></i></a>
+                        <a href=""><i class="fa-brands fa-twitter" id="twitter"></i></a>
+                    </div>
+                    </div>
+                </div>
+                <div class="navDivImg">
+                    <img src="fotos\logo.png" alt="logo" onclick="">
+                </div>
+                <div class="navDivLista">
+                    <ul>
+                        <li onclick="secciones()">Secciones</li>
+                        <li >Sobre nosotros</li>
+                        <li onclick="inicio()">Inicio</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </header>
+    <main>
+        <section class="secPrincipal">
+            <div>
+                <div class="divNotPrincipal">
+                    <div>
+                        <h1>El terrible fin de Carlos Menem Jr, ¿Accidente o Asesinato?</h1>
+                        <p>Carlos Saúl Facundo Menem Yoma Jr falleció a sus 26 años de edad a causa de un terrible accidente en helicóptero. Sin embargo, hay diferentes versiones que afirman que lo que en realidad ocurrió fue un ataque terrorista. </p>
+                        <button>Leer mas</button>
+                    </div>
+                    <img src="fotos/menem.jpg" alt="menem">
+                </div>
+                <hr>
+                <div class="divNotSecundarias">
+                    <div>
+                        <img src="fotos/barreda.png" alt="barreda">
+                        <h2>El Cuádruple Femicida de La Plata</h2>
+                    </div>
+                    <div>
+                        <img src="fotos/puccio.jpg" alt="puccio">
+                        <h2>El Clan Puccio</h2>
+                    </div>
+                    <div>
+                        <img src="fotos/schoklender.jpeg" alt="schoklender">
+                        <h2>La pesadilla Schoklender</h2>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="secNoticias">
+            <div class="noticiasTitulo">
+                <i class="fa-solid fa-fire"></i>
+                <h2>Ultimas Noticias</h2>
+            </div>
+            <div class="noticia">
+                <div>
+                    <h2>La historia detrás de la envenenadora de Montserrat</h2>
+                    <p>Yiya Murano entró en la historia argentina tras haber sido condenada por tres homicidios, su peculiar manera de hacerlo con cianuro, la hizo resaltar, convirtiéndola casi en un estrella de culto.</p>
+                    <a href="">Haz click para saber mas.</a>
+                </div>
+                <img src="fotos/yiya murano.jpeg" alt="yiya murano">
+            </div>
+            <hr>
+            <div class="noticia">
+                <div>   
+                    <h2>¿Quién asesinó a Solange?</h3>
+                    <p>Solange Grabenheimer vivía en un PH en Florida, cuando el 10 de enero de 2007 fue encontrada muerta. Con ella vivía su amiga Lucila Frend, quien se convirtió en la principal sospechosa del asesinato. Con la prescripción del caso, las preguntas y tensiones aún persisten.</p>
+                    <a href="">Haz click para saber mas.</a>
+                </div>
+                <img src="fotos/solange.jpeg" alt="solange">
+            </div>
+            <hr>
+            <div class="noticia">
+                <div>   
+                    <h2>La muerte de Alberto Nisman, ¿suicidio o asesinato?</h3>
+                    <p>La justicia argentina ha dictado en 2018 que Nisman había sido asesinado. Aun así, han habido diversas opiniones entorno a este caso, diferentes versiones de la historia donde algunos relatan que fue un asesinato y otros que fue un simple suicidio. Y por supuesto, como todo crimen, hay misterios sin resolver. </p>
+                    <a href="">Haz click para saber mas.</a>
+                </div>
+                <img src="fotos\/nisman.jpeg" alt="nisman">
+            </div>
+            <hr>
+        </section>
+        <section class="secNosotros">
+            <div class="divNosotros">
+                <div class="divInfoNos">
+                    <h3>Sobre nosotros</h3>
+                    <hr>
+                    <p>¿Qué nos hace diferentes? Nuestro punto de vista joven y contemporáneo. 
+                        En lugar de simplemente informar, buscamos inspirar y conectar con nuestra 
+                        audiencia. Desde las últimas noticias hasta análisis profundos, desde tecnología 
+                        puntera hasta tendencias culturales emergentes, estamos aquí para mantenerte informado y entretenido.</p>
+                    <button>Saber mas</button>
+                </div>
+                <div class="divForm">
+                    <h3>Contactanos</h3>
+                    <hr>
+                    <form action="https://formsubmit.co/podiapasar@bedes.com.ar" method="POST">
+                        <div class="nombreApellido">
+                            <label for="name">Nombre</label>
+                            <label for="surname" id="surname">Apellido</label>
+                            <input type="text" id="name" name="name" required>
+                            <input type="text" id="surname" name="surname" required>
+                        </div>
+                        <div>
+                            <label for="email">Mail</label><br>
+                            <input type="email" id="email" name="email" required><br>
+                        </div>
+                        <div>
+                            <label for="phone">Numero de telefono</label><br>
+                            <input type="tel" id="phone" name="phone" required><br>
+                        </div>
+                        <div>
+                            <label for="message">Mensaje</label><br>
+                            <textarea id="message" name="message" required></textarea><br>
+                        </div>
+                        <button type="submit" value="Submit">Enviar</button>
+
+                        <input type="hidden" name="_next" value="https://podia-pasar.github.io/PodiaPasar/">
+                        <input type="hidden" name="_captcha" value="false">
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <hr class="hrFooter">
+        <section class="secFooter">
+            <div class="divRedes">
+                <img src="fotos\logo.png" alt="">
+                <hr>
+                <div class="linksFooter">
+                    <a href="https://www.instagram.com/podiapasar?igsh=MWQ4Nm54bG41aDZqNA=="><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-twitter"></i></a>
+                </div>
+            </div>
+            <div class="divSeccionesFooter">
+                <h2>Secciones:</h2>
+                <ul>
+                    <li><a href="secciones/crimenes.html">Crimenes argentinos</a></li>
+                    <li><a href="secciones/idolos.html">Idolos argentinos</a></li>
+                </ul>
+            </div>
+        </section>
+        <hr class="hrFooter">
+    </footer>
+    <script src="podiapasar.js">
+    </script>
+</body>
+</html>
