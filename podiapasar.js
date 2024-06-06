@@ -20,3 +20,6 @@ function secciones() {
 function inicio() {
   window.location.href = "index.html";
 }
+function inicioSecciones() {
+  window.location.href = "../index.html";
+}
