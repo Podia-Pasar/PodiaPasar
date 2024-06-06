@@ -18,5 +18,5 @@ function secciones() {
   window.location.href = "secciones.html";
 }
 function inicio() {
-  window.location.href = "http://podiapasar.com/";
+  window.location.href = "index.html";
 }
