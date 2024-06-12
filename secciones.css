@@ -275,3 +275,162 @@ main{
 .divSeccionesFooter a:hover{
     color: #d11653;
 }
+
+
+
+@media (max-width: 1600px) and (min-width: 1200px){
+
+    
+    .secciones{
+        width: 90%;
+        margin-left: 5%;
+    }
+    .divSecciones img{
+        width: 250px;
+        height: 250px;
+    }
+    .divSecciones h3{
+        font-size: 25px;
+    }
+    .divSecciones a{
+        font-size: 20px;
+    }
+    
+}
+
+@media (max-width: 1200px) and (min-width: 900px){
+
+    main{
+        width: 80%;
+        margin-left: 10%;
+    }
+    .secciones{
+        width: 80%;
+        margin-left: 10%;
+    }
+    .divSecciones{
+        gap: 40px;
+    }
+    .divSecciones img{
+        width: 250px;
+        height: 250px;
+    }
+    .divSecciones h3{
+        font-size: 25px;
+    }
+    .divSecciones a{
+        color: #d11653;
+        font-size: 20px;
+        text-decoration: none;
+    }
+
+    
+}
+
+@media (max-width: 900px) and (min-width: 800px){
+
+    main{
+        width: 80%;
+        margin-left: 10%;
+    }
+    .secciones{
+        width: 100%;
+        margin-left: 0;
+    }
+    .divSecciones{
+        gap: 30px;
+    }
+    .divSecciones img{
+        width: 200px;
+        height: 200px;
+    }
+    .divSecciones h3{
+        font-size: 22px;
+    }
+    .divSecciones a{
+        color: #d11653;
+        font-size: 18px;
+        text-decoration: none;
+    }
+
+    
+}
+
+@media (max-width: 800px) and (min-width: 500px){
+
+    main{
+        width: 80%;
+        margin-left: 10%;
+    }
+    .secciones{
+        width: 100%;
+        margin-left: 0;
+    }
+    .divSecciones{
+        gap: 30px;
+    }
+    .divSecciones img{
+        width: 250px;
+        height: 250px;
+    }
+    .divSecciones h3{
+        font-size: 25px;
+        margin-bottom: 20px;
+    }
+    .divSecciones a{
+        font-size: 25px;
+        margin-top: 20px;
+        text-align: center;
+    }
+    .divSecciones{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 60%;
+        margin-left: 20%;
+    }
+    
+}
+@media (max-width: 500px) and (min-width: 300px){
+
+    main{
+        width: 80%;
+        margin-left: 10%;
+    }
+    .secciones{
+        width: 100%;
+        margin-left: 0;
+    }
+    .divSecciones{
+        gap: 30px;
+    }
+    .divSecciones img{
+        width: 250px;
+        height: 250px;
+    }
+    .secciones h2{
+        font-family: 25px;
+    }
+    .divSecciones h3{
+        font-size: 22px;
+        margin-bottom: 20px;
+    }
+    .divSecciones p{
+        font-size: 15px;
+    }
+    .divSecciones a{
+        font-size: 22px;
+        margin-top: 20px;
+        text-align: center;
+    }
+    .divSecciones{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+        margin-left: 10%;
+    }
+    
+}
