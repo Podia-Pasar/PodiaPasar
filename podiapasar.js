@@ -9,7 +9,7 @@ hotMenuA.addEventListener('click', () => {
 });
 
 hotMenuC.addEventListener('click', () => {
-  hotMenu.style.left = '-50%';
+  hotMenu.style.left = '-150%';
   hotMenuA.style.display = "block"
   hotMenuC.style.display = "none"
 });

@@ -24,6 +24,8 @@ h1, h2, h3, h4, h5{
 
     align-items: center;
     justify-content: center;
+
+    position: fixed;
 }
 .navDivImg{
     text-align: center;
@@ -162,6 +164,7 @@ h1, h2, h3, h4, h5{
 main{
     width: 50%;
     margin-left: 25%;
+    margin-top: 100px;
 }
 
 .secciones hr{
@@ -321,6 +324,27 @@ main{
         font-size: 20px;
     }
 
+    .navDivLista ul{
+        font-size: 20px;
+        gap: 15px;
+    }
+    .navDiv i{
+        width: 30px;
+        height: 30px;
+    }
+    .navDivSeccionesHotMenu {
+        width: 30%;
+        left: -150%;
+    }
+    .hotMenuRedes i {
+        font-size: 30px;
+        border-radius: 50px;
+        margin-top: 20px;
+        width: 50px;
+        height: 50px;
+        margin-bottom: 30px;
+        transition: scale 0.1s ease-in-out;
+    }
     
 }
 
@@ -350,8 +374,29 @@ main{
         font-size: 18px;
     }
 
-    
+    .navDivLista ul{
+        font-size: 20px;
+        gap: 15px;
+    }
+    .navDiv i{
+        width: 30px;
+        height: 30px;
+    }
+    .navDivSeccionesHotMenu {
+        width: 50%;
+        left: -150%;
+    }
+    .hotMenuRedes i {
+        font-size: 30px;
+        border-radius: 50px;
+        margin-top: 20px;
+        width: 50px;
+        height: 50px;
+        margin-bottom: 30px;
+        transition: scale 0.1s ease-in-out;
+    }
 }
+    
 
 @media (max-width: 800px) and (min-width: 500px){
 
@@ -387,7 +432,28 @@ main{
         width: 60%;
         margin-left: 20%;
     }
-    
+
+    .navDivLista ul{
+        font-size: 20px;
+        gap: 15px;
+    }
+    .navDiv i{
+        width: 30px;
+        height: 30px;
+    }
+    .navDivSeccionesHotMenu {
+        width: 80%;
+        left: -150%;
+    }
+    .hotMenuRedes i {
+        font-size: 30px;
+        border-radius: 50px;
+        margin-top: 20px;
+        width: 50px;
+        height: 50px;
+        margin-bottom: 30px;
+        transition: scale 0.1s ease-in-out;
+    }
 }
 @media (max-width: 500px) and (min-width: 300px){
 
@@ -430,4 +496,33 @@ main{
         margin-left: 10%;
     }
     
+
+    .navDiv{
+        grid-template-columns: 1fr 1fr;
+        height: 70px;
+        width: 100%;
+    }
+    .navDivLista ul{
+        font-size: 15px;
+        gap: 15px;
+    }
+    .navDiv i{
+        width: 30px;
+        height: 30px;
+    }
+    .navDivSeccionesHotMenu {
+        width: 70%;
+    }
+    .hotMenuRedes i {
+        font-size: 30px;
+        border-radius: 50px;
+        margin-top: 20px;
+        width: 50px;
+        height: 50px;
+        margin-bottom: 30px;
+        transition: scale 0.1s ease-in-out;
+    }
+    .navDivImg{
+        display: none;
+    }
 }

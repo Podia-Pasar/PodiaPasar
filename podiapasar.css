@@ -24,6 +24,8 @@ h1, h2, h3, h4, h5{
 
     align-items: center;
     justify-content: center;
+
+    position: fixed;
 }
 .navDivImg{
     text-align: center;
@@ -162,6 +164,7 @@ h1, h2, h3, h4, h5{
 main{
     width: 80%;
     margin-left: 10%;
+    margin-top: 100px;
 }
 
 .secPrincipal{
