@@ -23,3 +23,6 @@ function inicio() {
 function inicioSecciones() {
   window.location.href = "../index.html";
 }
+function seccionesSecciones() {
+  window.location.href = "../secciones.html";
+}
