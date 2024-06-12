@@ -436,12 +436,6 @@ main{
         width: 60%;
         margin-left: 20%;
     }
-    .secciones div{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-    }
 
     
     .navDivLista ul{
@@ -469,6 +463,8 @@ main{
 }
 @media (max-width: 500px) and (min-width: 300px){
 
+
+    
     main{
         width: 80%;
         margin-left: 10%;
@@ -506,12 +502,6 @@ main{
         align-items: center;
         width: 80%;
         margin-left: 10%;
-    }
-    .secciones div{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
     }
 
 

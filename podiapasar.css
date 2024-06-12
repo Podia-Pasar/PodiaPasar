@@ -66,7 +66,7 @@ h1, h2, h3, h4, h5{
 
 
 .navDivSeccionesHotMenu {
-    left: -50%;
+    left: -150%;
     top: 70px;
     background-color: rgb(0, 0, 0, 0.9);
     width: 20%;
@@ -182,14 +182,16 @@ main{
 }
 .divNotPrincipal img{
     object-fit: cover;
-    width: 400px;
-    height: 400px;
+    width: 100%;
+    height: 100%;
+    max-height: 400px;
+    max-width: 400px;
     display: flex;
     margin-left: auto;
     border-radius: 10px;
 }
 .divNotPrincipal div{
-    height: 400px;
+   
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -197,11 +199,13 @@ main{
 }
 .divNotPrincipal h1{
     font-size: 45px;
+    margin-bottom: 20px;
 }
 .divNotPrincipal p{
     font-size: 20px;
 }
 .divNotPrincipal button{
+    margin-top: 20px;
     padding: 10px;
     background-color: #d11653;
     color: rgb(255, 255, 255);
@@ -210,7 +214,7 @@ main{
     border: none;
     border-radius: 10px;
     transition: scale 0.05s ease-in;
-    width: 25%;
+
 }
 .divNotPrincipal button:hover{
     cursor: pointer;
@@ -228,22 +232,26 @@ main{
 }
 
 
-.divNotSecundarias{
+.divNotSecundarias {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 20px;
 }
-.divNotSecundarias div:hover{
+
+.divNotSecundarias div:hover {
     cursor: pointer;
     scale: 1.005;
 }
-.divNotSecundarias img{
-    width: 450px;
-    height: 450px;
+
+.divNotSecundarias img {
+    width: 100%;
+    height: 100%; 
     object-fit: cover;
     display: flex;
     margin: 0 auto;
     border-radius: 10px;
+    max-width: 450px;
+    max-height: 450px; 
 }
 .divNotSecundarias h2{
     font-size: 20px;
@@ -537,4 +545,206 @@ main{
 }
 .divSeccionesFooter a:hover{
     color: #d11653;
+}
+
+
+
+@media (max-width: 1600px) and (min-width: 1200px){
+
+    .divNotPrincipal h1{
+        font-size: 40px;
+    }
+    .divNotPrincipal p{
+        font-size: 18px;
+    }
+    .divNotPrincipal button{
+        font-size: 20px;
+        width: 50%;
+    } 
+
+}
+
+@media (max-width: 1200px) and (min-width: 900px){
+
+    
+
+    .divNotPrincipal h1{
+        font-size: 35px;
+    }
+    .divNotPrincipal p{
+        font-size: 15px;
+    }
+    .divNotPrincipal button{
+        font-size: 20px;
+        width: 50%;
+    }
+
+    .navDivLista ul{
+        font-size: 20px;
+        gap: 15px;
+    }
+    .navDiv i{
+        width: 30px;
+        height: 30px;
+    }
+    .navDivSeccionesHotMenu {
+        width: 30%;
+        left: -150%;
+    }
+    .hotMenuRedes i {
+        font-size: 30px;
+        border-radius: 50px;
+        margin-top: 20px;
+        width: 50px;
+        height: 50px;
+        margin-bottom: 30px;
+        transition: scale 0.1s ease-in-out;
+    }
+    
+}
+
+@media (max-width: 900px) and (min-width: 800px){
+
+    .divNotPrincipal h1{
+        font-size: 30px;
+    }
+    .divNotPrincipal p{
+        font-size: 13px;
+    }
+    .divNotPrincipal button{
+        font-size: 15px;
+        width: 50%;
+    }
+
+    .navDivLista ul{
+        font-size: 20px;
+        gap: 15px;
+    }
+    .navDiv i{
+        width: 30px;
+        height: 30px;
+    }
+    .navDivSeccionesHotMenu {
+        width: 50%;
+        left: -150%;
+    }
+    .hotMenuRedes i {
+        font-size: 30px;
+        border-radius: 50px;
+        margin-top: 20px;
+        width: 50px;
+        height: 50px;
+        margin-bottom: 30px;
+        transition: scale 0.1s ease-in-out;
+    }
+}
+    
+
+@media (max-width: 800px) and (min-width: 500px){
+
+    .divNotPrincipal{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .divNotPrincipal img{
+        height: 375px;
+        width: 3750px;
+        margin-right: auto;
+    }
+    .divNotPrincipal h1{
+        font-size: 35px;
+    }
+    .divNotPrincipal p{
+        font-size: 20px;
+    }
+    .divNotPrincipal button{
+        font-size: 15px;
+        width: 50%;
+        margin-left: 25%;
+    }
+
+
+    .navDivLista ul{
+        font-size: 20px;
+        gap: 15px;
+    }
+    .navDiv i{
+        width: 30px;
+        height: 30px;
+    }
+    .navDivSeccionesHotMenu {
+        width: 80%;
+        left: -150%;
+    }
+    .hotMenuRedes i {
+        font-size: 30px;
+        border-radius: 50px;
+        margin-top: 20px;
+        width: 50px;
+        height: 50px;
+        margin-bottom: 30px;
+        transition: scale 0.1s ease-in-out;
+    }
+}
+@media (max-width: 500px) and (min-width: 300px){
+    main{
+        width: 100%;
+        margin-left: 0;
+        margin-top: 100px;
+    }
+    
+    .secPrincipal{
+
+    }
+    .divNotPrincipal{
+        display: flex;
+        flex-direction: column-reverse;
+        padding: 20px;
+    }
+    .divNotPrincipal img{
+        height: 275px;
+        width: 275px;
+        margin-right: auto;
+    }
+    .divNotPrincipal h1{
+        font-size: 32px;
+    }
+    .divNotPrincipal p{
+        font-size: 17px;
+    }
+    .divNotPrincipal button{
+        font-size: 15px;
+        width: 50%;
+        margin-left: 25%;
+    }
+
+
+    .navDiv{
+        grid-template-columns: 1fr 1fr;
+        height: 70px;
+        width: 100%;
+    }
+    .navDivLista ul{
+        font-size: 15px;
+        gap: 15px;
+    }
+    .navDiv i{
+        width: 30px;
+        height: 30px;
+    }
+    .navDivSeccionesHotMenu {
+        width: 70%;
+    }
+    .hotMenuRedes i {
+        font-size: 30px;
+        border-radius: 50px;
+        margin-top: 20px;
+        width: 50px;
+        height: 50px;
+        margin-bottom: 30px;
+        transition: scale 0.1s ease-in-out;
+    }
+    .navDivImg{
+        display: none;
+    }
 }
