@@ -181,7 +181,11 @@ main{
     width: 80%;
     margin-left: 10%;
 }
-
+.secciones div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .secciones h2{
     font-size: 50px;
     margin: 50px 0;
