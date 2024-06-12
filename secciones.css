@@ -187,7 +187,7 @@ main{
 .divSecciones{
     display: grid;
     grid-template-columns: 1fr 1fr;
-
+    gap: 40px;
 }
 .divSecciones img{
     width: 300px;
@@ -319,9 +319,7 @@ main{
         font-size: 25px;
     }
     .divSecciones a{
-        color: #d11653;
         font-size: 20px;
-        text-decoration: none;
     }
 
     
@@ -351,9 +349,7 @@ main{
         font-size: 22px;
     }
     .divSecciones a{
-        color: #d11653;
         font-size: 18px;
-        text-decoration: none;
     }
 
     
