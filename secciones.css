@@ -182,12 +182,7 @@ main{
     margin-left: 10%;
 }
 
-.secciones div{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
+
 .secciones h2{
     font-size: 50px;
     margin: 50px 0;
@@ -441,6 +436,12 @@ main{
         width: 60%;
         margin-left: 20%;
     }
+    .secciones div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
 
     
     .navDivLista ul{
@@ -506,7 +507,13 @@ main{
         width: 80%;
         margin-left: 10%;
     }
-    
+    .secciones div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
 
     .navDiv{
         grid-template-columns: 1fr 1fr;
@@ -536,4 +543,6 @@ main{
     .navDivImg{
         display: none;
     }
+
+
 }
