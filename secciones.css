@@ -343,6 +343,9 @@ main{
     .divSecciones img{
         width: 200px;
         height: 200px;
+        display: flex;
+        justify-self: center;
+        align-self: center;
     }
     .divSecciones h3{
         font-size: 22px;
