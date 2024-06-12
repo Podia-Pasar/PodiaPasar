@@ -26,6 +26,7 @@ h1, h2, h3, h4, h5{
     justify-content: center;
 
     position: fixed;
+    top: 0;
 }
 .navDivImg{
     text-align: center;
@@ -66,7 +67,7 @@ h1, h2, h3, h4, h5{
 
 
 .navDivSeccionesHotMenu {
-    left: -50%;
+    left: -150%;
     top: 70px;
     background-color: rgb(0, 0, 0, 0.9);
     width: 20%;
