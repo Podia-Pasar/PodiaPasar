@@ -1,34 +1,25 @@
-function inicio(){
-  window.location.href = "index.html";
-};
+const hotMenuA = document.getElementById('hotMenuA');
+const hotMenuC = document.getElementById('hotMenuC');
+const hotMenu = document.getElementById('hotMenu');
 
-function billetes(){
-  windows.location.href = "nuevos billetes.html";
-};
-
-
-var menuNav = document.querySelector(".hotMenu");
-var barras = document.getElementById("hotMenuA");
-var cerrar = document.getElementById("hotMenuC");
-
-function hotMenuA() {
-    barras.style.display = "none";
-    cerrar.style.display = "block";
-    menuNav.classList.toggle("active");
-}
-function hotMenuC() {
-    barras.style.display = "block";
-    cerrar.style.display = "none";
-    menuNav.classList.toggle("active");
-}
-
-
-const ultimasNoticias = document.querySelector('.ultimasNoticias');
-
-window.addEventListener('scroll', () => {
-  const { scrollTop, clientHeight, scrollHeight } = document.documentElement;
-
-  if (scrollTop + clientHeight >= scrollHeight - 100) {
-    ultimasNoticias.classList.remove('hidden');
-  }
+hotMenuA.addEventListener('click', () => {
+  hotMenu.style.left = '10%';
+  hotMenuA.style.display = "none"
+  hotMenuC.style.display = "block"
 });
+
+hotMenuC.addEventListener('click', () => {
+  hotMenu.style.left = '-50%';
+  hotMenuA.style.display = "block"
+  hotMenuC.style.display = "none"
+});
+
+function secciones() {
+  window.location.href = "secciones.html";
+}
+function inicio() {
+  window.location.href = "index.html";
+}
+function inicioSecciones() {
+  window.location.href = "../index.html";
+}

@@ -1,10 +1,7 @@
 *{
     list-style: none;
     margin: 0;
-    border: 0;
-}
-body {
-    overflow-x: hidden;
+    padding: 0;
 }
 p{
     font-family: "Open Sans", sans-serif;
@@ -12,34 +9,26 @@ p{
 h1, h2, h3, h4, h5{
     font-family: "League Spartan", sans-serif;
 }
-a{
-    color: inherit;
-    text-decoration: none;
-}
 
-.nav{
+
+.nav {
     display: flex;
     justify-content: center;
-    
 }
-.divNav{
+.navDiv{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
 
-    height: 70px;
     width: 80%;
-    top: 0;
 
     align-items: center;
     justify-content: center;
-    position: fixed;
-    z-index: 100;
 }
-.navImg{
+.navDivImg{
     text-align: center;
 }
-.navImg img{
+.navDivImg img{
     display: inline-block;
     height: 70px;
 }
@@ -47,79 +36,82 @@ a{
     cursor: pointer;
 }
 
-.divNav i{
+.navDiv i{
     font-size: 30px;
     margin-left: 15px;
     width: 30px;
     height: 30px;
 }
-.divNav i:hover{
+.navDIv i:hover{
     cursor: pointer;
 }
 
-.divBusqueda{
+.navDivLista ul{
     display: flex;
     align-items: center;
     justify-content: right;
-    margin-right: 15px;
+    font-size: 25px;
+    font-weight: bold;
     gap: 30px;
 }
-.divBusqueda input{
-    box-shadow: 0px 4px 8px rgb(0, 0, 0, 0.3);
-    border-radius: 5px;
-    height: 30px;
-    width: 250px;
-    font-size: 17.5px;
-    padding-left: 10px;
-}
-.divBusqueda i{
-    font-size: 25px;
-    margin-left: 0;
-}
-.divBusqueda i:hover{
+
+  
+.navDivLista li:hover {
     cursor: pointer;
-    scale: 1.05;
-    text-shadow: 1px 1px 1px rgb( 150, 150, 150, 0.5);
+    color: #d11653;
 }
 
-.hotMenu {
-    position: fixed;
+
+
+.navDivSeccionesHotMenu {
     left: -50%;
     top: 70px;
     background-color: rgb(0, 0, 0, 0.9);
     width: 20%;
-    color: white;
+    color: rgb(255, 255, 255);
     padding: 20px;
     transition: left 0.1s ease-in 0.1s;;
+    position: fixed;
 }
 
+#hotMenuA:hover, #hotMenuC:hover{
+    cursor: pointer;
+}
 #hotMenuC{
     display: none;
 }
 
-.hotMenu.active {
-    left: 10%;
-}
-.hotMenu h3{
+
+.navDivSeccionesHotMenu h3{
     font-size: 40px;
 }
-.hotMenu li{
+
+.navDivSeccionesHotMenu li{
     font-size: 25px;
     margin-top: 10px;
     transition: scale 0.1s ease-in;
 }
-.hotMenu li:hover{
+
+.navDivSeccionesHotMenu a{
+    text-decoration: none;
+    color: white;
+}
+
+.navDivSeccionesHotMenu a:hover{
     cursor: pointer;
     color: #d11653;
     scale: 1.02;
 }
-.hotMenu i{
+
+.navDivSeccionesHotMenu i{
     font-size: 20px;
 }
+
 .hotMenuRedesH3{
     margin-top: 50PX;
     text-align: center;
 }
+
 .hotMenuRedes {
     display: flex;
     justify-content: space-between; 
@@ -131,7 +123,7 @@ a{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     color: black;
     font-size: 30px;
     border-radius: 50px;
@@ -142,13 +134,11 @@ a{
     transition: scale 0.1s ease-in-out;
 }
 .hotMenuRedes i:hover{
-    color: white;
+    color: rgb(255, 255, 255);
     scale: 1.1;
     box-shadow: 4px 4px 8px rgba(255, 255, 255, 0.5), -4px 4px 8px rgba(255, 255, 255, 0.5);
 }
-#tiktok:hover{
-    background-color: #ee1d52;
-}
+
 #ig:hover{
     background-color: #405DE6;
 }
@@ -160,248 +150,188 @@ a{
     width: 80%;
     margin-left: 10%;
     margin-top: 50px;
+    border-radius: 5px;
     height: 3px;
     border: none;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
 }
+
+
 
 
 main{
     width: 80%;
     margin-left: 10%;
-    margin-top: 70px;
-    overflow: hidden;
-}
-.divNotGrande{
-    display: flex;
-    flex-direction: column;
-    background-color: black;
-    padding: 50px;
 }
 
+.secPrincipal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(20, 20, 20);
+    color: rgb(255, 255, 255);
+    padding: 50px;
+}
 .divNotPrincipal{
     display: grid;
     grid-template-columns: 1fr 1fr;
+    gap: 20px;
 }
-.divNotGrande hr{
-    background-color: white;
-    border: none;
-    border-radius: 5px;
-    height: 2px;
-    margin: 50px 0;
-}
-
-
-.imgPrincipal{
-    display: flex;
-    justify-content: right;
-}
-.imgPrincipal img{
-    width: 500px;
-    height: 500px;
-    border-radius:10px ;
-    align-self: flex-end;
+.divNotPrincipal img{
     object-fit: cover;
+    width: 400px;
+    height: 400px;
+    display: flex;
+    margin-left: auto;
+    border-radius: 10px;
 }
-
-
-.principal{
+.divNotPrincipal div{
+    height: 400px;
     display: flex;
     flex-direction: column;
-    flex-grow: 1;
+    justify-content: space-between;
+
 }
-.principal h1{
-    color: white;
-    font-size: 40px;
+.divNotPrincipal h1{
+    font-size: 45px;
 }
-.principal p{
-    color: white;
+.divNotPrincipal p{
     font-size: 20px;
-    flex-grow: 1;
+}
+.divNotPrincipal button{
+    padding: 10px;
+    background-color: #d11653;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: 20px;
+    border: none;
+    border-radius: 10px;
+    transition: scale 0.05s ease-in;
+    width: 25%;
+}
+.divNotPrincipal button:hover{
+    cursor: pointer;
+    scale: 1.02;
+}
+
+
+.secPrincipal hr{
+    margin: 50px 0;
+    width: 90%;
+    margin-left: 5%;
+    height: 2px;
+    border: none;
+    background-color: rgb(138, 138, 138);
+}
+
+
+.divNotSecundarias{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+.divNotSecundarias div:hover{
+    cursor: pointer;
+    scale: 1.005;
+}
+.divNotSecundarias img{
+    width: 450px;
+    height: 450px;
+    object-fit: cover;
+    display: flex;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+.divNotSecundarias h2{
+    font-size: 20px;
     margin-top: 20px;
 }
-.principal button{
-    background-color: #d11653;
-    color: white;
-    font-size: 20px;
-    padding: 10px;
-    border-radius: 25px;
-    width: 150px;
-}
-.principal button:hover{
-    cursor: pointer;
-    box-shadow: 0px 4px 8px rgba(255, 255, 255, 0.3);
-}
 
 
 
-.notSecundarias{
-    display: flex;
-    flex-direction: column;
-}
-
-.ulNotSecundarias{
-    display: flex;
-    flex-direction: row;
-}
-.ulNotSecundarias img:hover{
-    cursor: pointer;
-    scale: 1.03;
-}
-.ulNotSecundarias li{
-    margin: 0 auto;
-}
-.ulNotSecundarias img{
-    width: 250px;
-    height: 250px;
-    margin: 10px;
-    border-radius: 10px;
-    object-fit: cover;
-    object-position: center;
-    transition: scale 0.2s ease-out;
-
-}
-.ulNotSecundarias p{
-    color: white;
-    text-align: center;
-    font-size: 20px;
-    width: 250px;
-}
 
 
-.divNotMomento{
+
+.secNoticias{
     padding: 50px;
 }
 
-
-
-.divCuerpo{
+.noticiasTitulo{
     display: flex;
     flex-direction: row;
+    gap: 10px;
+    margin-bottom: 20PX;
 }
-
-
-.titulo{
-    display: flex;
-    flex-direction: row;
-    justify-content: left;
-    align-items: center;
-    color: #4d7d6b;
-    font-size: 20px;
-    margin-bottom: 30px;
+.noticiasTitulo i{
+    font-size: 30px;
+    color: #d11653;
 }
-.titulo i {
-    animation: rotacion 3s linear infinite; 
-    color: #4d7d6b;
-    font-size: 35px;
-    margin-right: 20px;
-}
-
-@keyframes rotacion {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
+.noticiasTitulo h2{
+    font-size: 30px;
 }
 
 .noticia{
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     margin-bottom: 50px;
+    width: 100%;
+    
 }
+
+.noticia div{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    justify-content: space-evenly;
+    width: 100%;
+    padding:  0 50px;
+}
+.noticia h2{
+    font-size: 40px;
+}
+.noticia P{
+    font-size: 20px;
+    margin-top: 20px;
+}
+.noticia a{
+    font-size: 20px;
+    text-decoration: none;
+    color: #d11653;
+    margin-top: auto;
+}
+
 .noticia img{
     width: 400px;
     height: 400px;
+    border-radius:  5px;
+    margin-left: auto;
+    margin-right: 50px;
     object-fit: cover;
-    border-radius: 5px;
-    box-shadow: 4px 4px 8px rgb(0, 0, 0, 0.5), -4px 4px 8px rgb(0, 0, 0, 0.5);
-    margin-left: 50px;
-    margin-right: 10px;
+    box-shadow: 4px 4px 8px rgb(0, 0, 0, 0.8), -4px 4px 8px rgb(0, 0, 0, 0.8);
 }
 
-.notDia{
-    display: flex;
-    flex-direction: column;
-}
-.notDia h3{
-    font-size: 30px;
-
-}
-.notDia p{
-    flex-grow: 1;
-    font-size: 20px;
-    margin-top: 20px;
-}
-.notDia a{
-    color: #f17b00;
-    font-size: 20px;
-    text-decoration: none;
-}
-
-
-.sugerido{
-    display: flex;
-    flex-direction: column;
-    background-color: rgb(223, 223, 223);
-    border-radius: 5px;
-    margin: 20px;
-    padding: 20px 40px;
-    width: 600px;
-    box-shadow: 4px 4px 8px rgb(0, 0, 0, 0.5), -4px 4px 8px rgb(0, 0, 0, 0.5);
-}
-.sugerido hr{
-    width: 100%;
+.secNoticias hr{
+    margin: 50px 0;
     height: 2px;
     border: none;
-    border-radius: 5px;
-    background-color: rgb(153, 153, 153);
-    margin-top: 20px;
-}
-.sugerido h3{
-    font-size: 45px;
-    color: black;
-    text-align: center;
-}
-
-.divSugerido{
-    display: flex;
-    flex-direction: row;
-    margin-top: 20px;
-}
-.divSugerido img{
-    height: 120px;
-    width: 120px;
-    border-radius: 5px;
-    box-shadow: 4px 4px 8px rgb(0, 0, 0, 0.5), -4px 4px 8px rgb(0, 0, 0, 0.5);
-    margin-right: 20px;
-}
-.divSugerido div{
-    display: flex;
-    flex-direction: column;
-}
-
-.divSugerido h4{
-    font-size: 18px;
-}
-.divSugerido a{
-    color: black;
-    font-size: 18px;
-    text-decoration: none;
-    margin-top: auto;
-}
-.divSugerido a:hover{
-    cursor: pointer;
+    background-color: rgb(138, 138, 138);
+    object-fit: cover;
 }
 
 
 
-.sobreNosotros{
-    background-image: url("fotos/fondo contacto.jpg");
+
+
+.secNosotros{
+    background-image: url("fotos/fondo.webp");
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
     padding: 50px 0 50px 0;
     margin-top: 100px;
 }
-.nosotros {
+.divNosotros {
     display: grid;
     grid-template-columns: 1fr 1fr;
     width: 80%;
@@ -410,7 +340,7 @@ main{
     align-items: center;
 }
 
-.infoNos {
+.divInfoNos {
     padding: 20px;
     text-align: center;
     display: flex;
@@ -422,23 +352,23 @@ main{
     border-radius: 10px 0 0 10px;
     box-shadow:  -4px 4px 8px rgb(0, 0, 0, 0.5);
 }
-.infoNos h3{
+.divInfoNos h3{
     font-size: clamp(25px, 5vw, 40px);
 }
-.infoNos hr{
+.divInfoNos hr{
     width: 30%;
     background-color: #d11653;
     border: none;
-    border-radius: 5px;
+    border-radius: 50px;
     height: 3px;
     margin-top: 10px;
 }
-.infoNos p{
+.divInfoNos p{
     width: 70%;
     font-size: clamp(12px, 3vw, 20px);
     margin-top: 10px;
 }
-.infoNos button{
+.divInfoNos button{
     background-color: #d11653;
     color: white;
     font-size: 20px;
@@ -446,8 +376,9 @@ main{
     border-radius: 25px;
     width: 150px;
     margin-top: 20px;
+    border: none;
 }
-.infoNos button:hover{
+.divInfoNos button:hover{
     cursor: pointer;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
 }
@@ -455,7 +386,7 @@ main{
 
 
 
-.formContacto {
+.divForm {
     border-radius: 0 10px 10px 0;
     box-shadow: 4px 4px 8px rgb(0, 0, 0, 0.5);
     padding: 20px;
@@ -464,20 +395,20 @@ main{
     height: 100%;
 }
 
-.formContacto h3 {
+.divForm h3 {
     font-size: clamp(25px, 5vw, 40px);
     text-align: center;
     color: white;
 }
 
-.formContacto form {
+.divForm form {
     display: flex;
     flex-direction: column;
     width: 80%;
     margin-left: 10%;
 }
 
-.formContacto form div{
+.divForm form div{
     margin-top: 10px;
 }
 .nombreApellido{
@@ -485,12 +416,12 @@ main{
     grid-template-columns: 1fr 1fr;
     width: 100%;
 }
-.formContacto label{
+.divForm label{
     font-size: clamp(15px, 3vw, 20px);
     color: white;
     margin: 0;
 }
-.formContacto input{
+.divForm input{
     height: 20px;
     border: none;
     font-size: clamp(15px, 3vw, 20px);
@@ -505,7 +436,7 @@ main{
 #surname{
     margin-left: 10%;
 }
-.formContacto textarea{
+.divForm textarea{
     height: 100px;
     border: none;
     font-size: 20px;
@@ -514,7 +445,7 @@ main{
     border-radius: 5px;
     margin-top: 5px;
 }
-.formContacto hr{
+.divForm hr{
     width: 30%;
     margin: auto;
     background-color: #d11653;
@@ -523,7 +454,7 @@ main{
     height: 3px;
     margin-top: 10px;
 }
-.formContacto button{
+.divForm button{
     background-color: #d11653;
     color: white;
     font-size: 20px;
@@ -532,1992 +463,75 @@ main{
     width: 150px;
     margin: 0 auto;
     margin-top: 20px;
+    border: none;
 }
-.formContacto button:hover{
+.divForm button:hover{
     cursor: pointer;
     box-shadow: 0px 4px 8px rgba(255, 255, 255, 0.3);
 }
 
 
-footer{
-    margin-bottom: 50px;
-}
-.footer{
-    width: 60%;
-    margin-left: 20%;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-}
+
 .hrFooter{
-    width: 70%;
-    height: 3px;
-    border: none;
-    border-radius: 5px;
-    background-color: black;
-    margin: 50px 0;
-    margin-left: 15%;
-}
-
-.footer ul{
-    margin: 0;
-}
-.footer li{
-    font-size: clamp(15px, 1.5vw, 25px);
-    margin-top: 15px;
-    text-align: center;
-    transition: scale 0.1s ease-in;
-}
-.footer li:hover{
-    cursor: pointer;
-    color: #d11653;
-    scale: 1.02;
-}
-.footer i{
-    font-size: 20px;
-}
-
-
-.redesFooter{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-
-}
-.redesFooter img{
-    width: 250px;
-    align-self: center;
-}
-.redesFooter hr{
-    width: 50%;
-    margin:  10px auto;
-    background-color: #d11653;
-    border: none;
-    border-radius: 5px;
-    height: 3px;
-}
-.linksFooter{
-    align-self: center;
-    display: flex;
-    flex-direction: row;
-    gap: 30px;
-}
-.linksFooter i {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: black;
-    color: white;
-    font-size: 30px;
-    border-radius: 50px;
-    margin-top: 20px;
-    width: 50px;
-    height: 50px;
-    margin-bottom: 30px;
-    transition: scale 0.1s ease-in-out;
-}
-.linksFooter i:hover{
-    cursor: pointer;
-    scale: 1.1;
-    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5), -4px 4px 8px rgba(0, 0, 0, 0.5);
-    color: white;
-}
-
-
-
-
-
-.secNoticia hr{
-    width: 60%;
-    margin-left: 20%;
+    width: 80%;
+    margin: 20px 0;
+    margin-left: 10%;
     height: 2px;
-    background-color: black;
     border: none;
-    border-radius: 5px;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    border-radius: 10px;
+    background-color: rgb(138, 138, 138);
 }
-.infoPrincipal{
+
+.secFooter{
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding: 50px;
-    height: 640px;
-    gap: 20px;
-}
-.infoPrincipal img{
-    border-radius: 10px;
-    box-shadow: 4px 4px 8px rgb(0, 0, 0, 0.5),-4px 4px 8px rgb(0, 0, 0, 0.5);
-    height: 600px;
-    width: 600px;
-    object-fit: cover;
-    margin-left: auto;
-    margin-right: auto;
 }
 
-
-.infoPrincipalTexto{
+.divRedes img{
+    width: 300px;
+    height: auto;
+    margin: 0 auto;
     display: flex;
-    flex-direction: column;
-    height: 600px;
 }
-.infoPrincipal h2{
-    font-size: 45px;
-}
-.infoPrincipal h3{
-    margin-top: 40px;
-    font-size: 30px;
-    font-weight: lighter;
-}
-
-
-.infoPrincipalRedes{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin-top: auto;
-}
-
-.infoPrincipal h4{
-    font-size: 25px;
-    text-align: center;
-    align-self: center;
-    color: black;
-    margin-right: auto;
-}
-.infoSecundaria h5{
-    font-size: 25px;
-    margin-top: 20px;
-}
-
-.infoSecundaria img{
-    width: 250px;
-    height:250px;
-    object-fit: cover;
-}
-
-
-.infoPrincipalRedes div{
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    gap: 10px;
-}
-.infoPrincipal i{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: white;
-    color: black;
-    border: 1px solid black;
-    font-size:25px;
+.divRedes hr{
+    width: 25%;
+    height: 2px;
+    border: none;
+    background-color: #d11653;
     border-radius: 50px;
-    width: 40px;
-    height: 40px;
-    transition: scale 0.1s ease-in-out;
+    margin: 10px 0;
+    margin-left: 37.5%;
 }
-.infoPrincipal i:hover{
-    cursor: pointer;
+.linksFooter{
+    font-size: 40px;
+    text-align: center;
+    text-decoration: none;
+}
+.linksFooter a{
+    color: black;
+}
+.linksFooter i{
+    padding: 10px;
+    border-radius: 50px;
+}
+.linksFooter i:hover{
     scale: 1.1;
-    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5), -4px 4px 8px rgba(0, 0, 0, 0.5);
-    color: white;
-    border: none;
+    background-color: none;
 }
 
-
-.ultimasNoticias {
-    animation: slide-up 1s ease-out forwards;
-  }
-  
-  @keyframes slide-up {
-    0% {
-      transform: translateY(100%);
-      opacity: 0;
-    }
-    100% {
-      transform: translateY(0);
-      opacity: 1;
-    }
-  }
-
-.infoSecundaria{
-    text-align: center;
+.divSeccionesFooter h2{
+    font-size: 40px;
 }
-.infoSecundaria p{
-    width: 60%;
-    margin-left: 20%;
-    font-size: 20px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    text-align: left;
-}
-
-.hidden {
-    display: none;
-}
-.infoSecundaria ul{
-    display: flex;
-    flex-direction: column;
-    margin: 20px 0;
-}
-.infoSecundaria li{
-    width: 60%;
-    margin-left: 20%;
-    font-size: 20px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    text-align: left;
-    list-style: circle;
-}
-
-
-.noticiasSection{
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-}
-.noticiasSection hr{
-    width: 100%;
-    margin: 0;
-    height: 1px;
-    background-color: black;
-    border-radius: 5px;
-    border: none;
-}
-.tituloSection h2{
-    font-size: 50px;
-    text-align: center;
-    margin: 60px 0;
-}
-.politica{
-    color: #1315bd;
-}
-.salud{
-    color: #179b5b;
-}
-.deportes{
-    color: #f17b00;
-}
-.cultura{
-    color: #d615da;
-}
-.pensar{
-    color:#9ecadf;
-}
-.futuro{
-    color: #7474df;
-}
-.ciencia{
-    color: #179b5b;
-}
-
-.noticiaSection{
-    display: flex;
-    justify-content: left;
-}
-.noticiaSection div{
-    display: flex;
-    flex-direction: row;
-    gap: 30px;
-    margin: 0 10px 0 10px;
-}
-.noticiaSection div div{
-    display: flex;
-    flex-direction: column;
-    margin: 10px 0 10px 0;
-}
-.noticiaSection div div h3{
-    font-size: 35px;
-}
-.noticiaSection div div p{
-    font-size: 20px;
-}
-.noticiaSection div div a{
-    margin-top: auto;
-    color: #f17b00;
+.divSeccionesFooter ul{
+    margin-left: 50px;
     font-size: 25px;
+
 }
-.noticiaSection img{
-    border-radius: 10px;
-    box-shadow: 4px 4px 8px rgb(0, 0, 0, 0.5),-4px 4px 8px rgb(0, 0, 0, 0.5);
-    height: 400px;
-    width: 400px;
-    margin: 10px auto;
-    object-fit: cover;
+.divSeccionesFooter a{
+    text-decoration: none;
+    color: black;
 }
-
-
-
-
-
-
-
-@media (min-width: 1400px) and (max-width: 1600px) {
-    .ulNotSecundarias img {
-        width: 220px;
-        height: 220px;
-    }
-    .ulNotSecundarias p {
-        width: 220px;
-    }
-    .noticia img{
-        width: 280px;
-        height: 280px;
-        margin-left: 40px;
-    }
-    .notDia h3{
-        font-size: 25px;
-    }
-    .notDia p{
-        font-size: 18px;
-    }
-    .notDia a{
-        font-size: 18px;
-        margin-top: 10px;
-    }
-
-    
-    .hotMenu {
-        width: 20%;
-        left: -100%;
-    }
-    .hotMenu li{
-        font-size: 25px;
-    }
-    .hotMenuRedes i {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: white;
-        color: black;
-        font-size: 30px;
-        border-radius: 50px;
-        margin-top: 20px;
-        width: 50px;
-        height: 50px;
-        margin-bottom: 30px;
-        transition: scale 0.1s ease-in-out;
-    }
-
-
-    .linksFooter{
-        gap: 20px;
-    }
-    .linksFooter i {
-        font-size: 28px;
-        width: 45px;
-        height: 45px;
-    }
-    .redesFooter img{
-        width: 220px;
-    }
-
-
-    .infoPrincipal img{
-        height: 550px;
-        width: 550px;
-    }
-    .infoPrincipal{
-        height: auto;
-    }
-    .infoPrincipalTexto{
-        height: 550px;
-    }
-    .infoPrincipal h2{
-        font-size: 40px;
-    }
-    .infoPrincipal h3{
-        font-size: 28px;
-        margin-top: 20px;
-    }
-    .infoPrincipal h4{
-        font-size: 22px;
-    }
-
-
-    .secNoticia hr{
-        width: 80%;
-        margin: 30px 0;
-        margin-left: 10%;
-    }
-}
-@media (min-width: 1200px) and (max-width: 1400px) {
-    .ulNotSecundarias img {
-        width: 190px;
-        height: 190px;
-    }
-
-    .ulNotSecundarias p {
-        width: 200px;
-    }
-    .imgPrincipal img{
-        width: 400px;
-        height: 400px;
-    }
-    .principal h1{
-        font-size: 35px;
-    }
-    .principal p{
-        font-size: 18px;
-    }
-    .principal button{
-        width: 150px;
-    }
-
-    .notDia h3{
-        font-size: 23px;
-    }
-    .notDia p{
-        font-size: 16px;
-    }
-    .notDia a{
-        font-size: 16px;
-        margin-top: 5px;
-    }
-    .noticia img{
-        width: 240px;
-        height: 240px;
-    }
-
-    .sugerido h3{
-        font-size: 35px;
-    }
-    
-    .divSugerido{
-        flex-direction: column;
-        text-align: center;
-    }
-    .divSugerido img{
-        margin: 10px auto;
-        width: 170px;
-        height: 170px;
-    }
-    .divSugerido div{
-        display: flex;
-        flex-direction: column;
-    }
-    
-    .divSugerido h4{
-        font-size: 18px;
-    }
-    .divSugerido a{
-        margin-top: 5px;
-    }
-
-
-    
-    .hotMenu {
-        width: 30%;
-        left: -100%;
-    }
-    .hotMenu li{
-        font-size: 24px;
-    }
-    .hotMenuRedes i {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: white;
-        color: black;
-        font-size: 30px;
-        border-radius: 50px;
-        margin-top: 20px;
-        width: 50px;
-        height: 50px;
-        margin-bottom: 30px;
-        transition: scale 0.1s ease-in-out;
-    }
-
-
-    .linksFooter{
-        gap: 20px;
-    }
-    .linksFooter i {
-        font-size: 28px;
-        width: 45px;
-        height: 45px;
-    }
-    .redesFooter img{
-        width: 220px;
-    }
-
-
-    .noticiaSection div div h3{
-        font-size: 22px;
-    }
-    .noticiaSection div div a{
-        font-size: 18px;
-    }
-    .noticiaSection img{
-        height: 350px;
-        width: 350px;
-    }
-
-
-
-
-    .infoPrincipal img{
-        height: 400px;
-        width: 400px;
-    }
-    .infoPrincipal{
-        height: 400px;
-    }
-    .infoPrincipalTexto{
-        height: 400px;
-    }
-    .infoPrincipal h2{
-        font-size: 35px;
-    }
-    .infoPrincipal h3{
-        font-size: 22px;
-        margin-top: 20px;
-    }
-    .infoPrincipal h4{
-        font-size: 18px;
-    }
-
-    .secNoticia hr{
-        width: 80%;
-        margin: 30px 0;
-        margin-left: 10%;
-    }
-}
-@media (min-width: 900px) and (max-width: 1200px) {
-    .ulNotSecundarias img {
-        width: 270px;
-        height: 270px;
-    }
-    main{
-        width: 90%;
-        margin-left: 5%;
-    }
-    .divNav{
-        width: 90%;
-    }
-    .ulNotSecundarias p {
-        width: 270px;
-    }
-    .ulNotSecundarias{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-    }
-    .divNotGrande{
-        padding: 30px;
-    }
-    .principal h1{
-        font-size: 29px;
-    }
-    .principal p{
-        font-size: 16px;
-    }
-    .principal button{
-        width: 150px;
-    }
-    .imgPrincipal img{
-        width: 350px;
-        height: 350px;
-    }
-
-    .noticia{
-        flex-direction: column-reverse;
-        text-align: center;
-    }
-    .notDia h3{
-        font-size: 23px;
-        margin-top: 10px;
-        width: 80%;
-        margin-left: 10%;
-    }
-    .notDia p{
-        font-size: 16px;
-        width: 80%;
-        margin-left: 10%;
-    }
-    .notDia a{
-        font-size: 16px;
-        margin-top: 5px;
-        width: 80%;
-        margin-left: 10%;
-    }
-    .noticia img{
-        width: 300px;
-        height: 300px;
-        margin: auto;
-    }
-
-    .sugerido h3{
-        font-size: 35px;
-    }
-    
-    .divSugerido{
-        flex-direction: column;
-        text-align: center;
-    }
-    .divSugerido img{
-        margin: 10px auto;
-        width: 170px;
-        height: 170px;
-    }
-    .divSugerido div{
-        display: flex;
-        flex-direction: column;
-    }
-    
-    .divSugerido h4{
-        font-size: 18px;
-    }
-    .divSugerido a{
-        margin-top: 5px;
-    }
-
-
-    .nosotros {
-        display: flex;
-        flex-direction: column;
-    }
-    .infoNos {
-        width: 500px;
-        margin-bottom: 20px;
-        border-radius: 5px;
-    }
-    .formContacto{
-        width: 500px;
-        border-radius: 5px;
-    }
-
-
-    .hotMenu {
-        width: 35%;
-        left: -100%;
-    }
-    .hotMenu li{
-        font-size: 22px;
-    }
-    .hotMenuRedes i {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: white;
-        color: black;
-        font-size: 30px;
-        border-radius: 50px;
-        margin-top: 20px;
-        width: 50px;
-        height: 50px;
-        margin-bottom: 30px;
-        transition: scale 0.1s ease-in-out;
-    }
-
-
-    .linksFooter{
-        gap: 18px;
-    }
-    .linksFooter i {
-        font-size: 25px;
-        width: 40px;
-        height: 40px;
-    }
-    .redesFooter img{
-        width: 200px;
-    }
-
-
-
-    .noticiaSection div div h3{
-        font-size: 30px;
-    }
-    .noticiaSection div div p{
-        font-size: 15px;
-    }
-    .noticiaSection div div a{
-        font-size: 20px;
-    }
-    .noticiaSection img{
-        height: 350px;
-        width: 350px;
-    }
-
-
-    .infoPrincipal img{
-        height: 600px;
-        width: 600px;
-    }
-    .infoPrincipal{
-        display: flex;
-        flex-direction: column-reverse;
-        height: auto;
-    }
-    .infoPrincipalTexto{
-        height: auto;
-    }
-    .infoPrincipal h2{
-        font-size: 40px;
-        margin-top: 30px;
-    }
-    .infoPrincipal h3{
-        font-size: 25px;
-        margin-top: 20px;
-    }
-    .infoPrincipal h4{
-        font-size: 18px;
-    }
-
-
-    .infoSecundaria p{
-        width: 70%;
-        margin-left: 15%;
-        font-size: 20px;
-    }
-    .infoSecundaria li{
-        width: 70%;
-        margin-left: 15%;
-        font-size: 20px;
-    }
-    .secNoticia hr{
-        width: 70%;
-        margin: 35px 0;
-        margin-left: 15%;
-    }
-    .secNoticia hr{
-        width: 80%;
-        margin: 30px 0;
-        margin-left: 10%;
-    }
-}
-@media (min-width: 700px) and (max-width: 900px) {
-    .ulNotSecundarias img {
-        width: 200px;
-        height: 200px;
-    }
-    main{
-        width: 90%;
-        margin-left: 5%;
-    }
-    .divNav{
-        width: 90%;
-    }
-    .ulNotSecundarias p {
-        width: 200px;
-    }
-    .ulNotSecundarias{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-    }
-    .divNotGrande{
-        padding: 20px;
-    }
-    .principal h1{
-        font-size: 30px;
-    }
-    .principal p{
-        font-size: 16px;
-        margin-top: 10px;
-    }
-    .principal button{
-        width: 130px;
-        margin: 20px auto;
-    }
-    .imgPrincipal img{
-        width: 400px;
-        height: 400px;
-        margin: auto;
-    }
-    .divNotPrincipal{
-        display: grid;
-        grid-template-columns: 1fr;
-        text-align: center;
-    }
-
-    .noticia{
-        flex-direction: column-reverse;
-        text-align: center;
-    }
-    .notDia h3{
-        font-size: 18px;
-        margin-top: 10px;
-    }
-    .notDia p{
-        font-size: 12px;
-        margin-top: 5px;
-    }
-    .notDia a{
-        font-size: 15px;
-        margin-top: 10px;
-    }
-    .noticia img{
-        width: 220px;
-        height: 220px;
-        margin: auto;
-    }
-
-    .sugerido{
-        padding: 5px 10px;
-        width: 500px;
-    }
-    .sugerido hr{
-        width: 90%;
-        margin-left: 5%;
-        margin-top: 30px;
-    }
-    .sugerido h3{
-        font-size: 30px;
-    }
-    
-    .divSugerido{
-        flex-direction: column;
-        text-align: center;
-    }
-    .divSugerido img{
-        margin: 10px auto;
-        width: 130px;
-        height: 130px;
-    }
-    .divSugerido div{
-        display: flex;
-        flex-direction: column;
-    }
-    
-    .divSugerido h4{
-        font-size: 18px;
-    }
-    .divSugerido a{
-        margin-top: 5px;
-    }
-
-
-    .nosotros {
-        display: flex;
-        flex-direction: column;
-    }
-    .infoNos {
-        width: 400px;
-        margin-bottom: 20px;
-        border-radius: 5px;
-    }
-    .formContacto{
-        width: 400px;
-        border-radius: 5px;
-    }
-
-
-    .divNav{
-        display: flex;
-    }
-    .divBusqueda input{
-        display: none;
-    }
-    .divBusqueda i{
-        display: none;
-    }
-    .navImg{
-        margin-left: auto;
-        margin-right: auto;
-    }
-    .hotMenu {
-        width: 50%;
-        left: -100%;
-    }
-
-
-
-    .linksFooter{
-        gap: 16px;
-    }
-    .linksFooter i {
-        font-size: 23px;
-        width: 40px;
-        height: 40px;
-    }
-    .redesFooter img{
-        width: 180px;
-    }
-
-    .footer{
-        display: flex;
-        flex-direction: column;
-    }
-    
-    .footer ul{
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        gap: 10px;
-    }
-    
-    .footer li{
-        margin: auto;
-    }
-
-
-
-    .noticiaSection div div h3{
-        font-size: 24px;
-    }
-    .noticiaSection div div p{
-        font-size: 13px;
-    }
-    .noticiaSection div div a{
-        font-size: 18PX;
-    }
-    .noticiaSection img{
-        height: 320px;
-        width: 320px;
-    }
-
-
-
-    .infoPrincipal img{
-        height: 500px;
-        width: 500px;
-    }
-    .infoPrincipal{
-        display: flex;
-        flex-direction: column-reverse;
-        height: auto;
-    }
-    .infoPrincipalTexto{
-        height: auto;
-    }
-    .infoPrincipal h2{
-        font-size: 35px;
-        margin-top: 30px;
-    }
-    .infoPrincipal h3{
-        font-size: 23px;
-        margin-top: 20px;
-    }
-    .infoPrincipal h4{
-        font-size: 18px;
-    }
-    .infoPrincipalRedes{
-        margin-top: 50px;
-    }
-
-
-    .infoSecundaria p{
-        width: 80%;
-        margin-left: 10%;
-        font-size: 17px;
-    }
-    .infoSecundaria li{
-        width: 80%;
-        margin-left: 10%;
-        font-size: 17px;
-    }
-    .secNoticia hr{
-        width: 80%;
-        margin: 30px 0;
-        margin-left: 10%;
-    }
-}
-@media (min-width: 600px) and (max-width: 700px) {
-    main{
-        width: 100%;
-        margin-left: 0;
-    }
-    .divNav{
-        width: 100%;
-    }
-    .ulNotSecundarias img {
-        width: 180px;
-        height: 180px;
-        margin-top: 50px;
-    }
-    .divNotGrande{
-        padding: 10px;
-    }
-    .ulNotSecundarias p {
-        font-size: 16px;
-        text-align: left;
-        width: 90%;
-    }
-    .ulNotSecundarias {
-        display: grid;
-        grid-template-columns: 1fr;
-        padding: 0;
-    }
-    .ulNotSecundarias li{
-        display: flex;
-        flex-direction: row;
-        margin: 0 ;
-        gap: 30px;
-    }
-    .ulNotSecundarias p{
-        align-self: center;
-    }
-    .principal h1{
-        font-size: 28px;
-        text-align: left;
-    }
-    .principal p{
-        font-size: 18px;
-        margin-top: 10px;
-        text-align: left;
-    }
-    .principal button{
-        background-color: #d11653;
-        color: white;
-        font-size: 25px;
-        padding: 5px;
-        border-radius: 25px;
-        width: 150px;
-        height: 50px;
-        margin: 20px auto;
-    }
-    .imgPrincipal img{
-        width: 430px;
-        height: 430px;
-        margin: auto;
-    }
-    .divNotPrincipal{
-        display: grid;
-        grid-template-columns: 1fr;
-        text-align: center;
-    }
-
-
-
-    .divNotMomento{
-        padding: 10px 5px 10px 5px;
-    }
-    .noticia{
-        flex-direction: column;
-        text-align: center;
-        padding: 20px;
-    }
-    .notDia h3{
-        font-size: 25px;
-        margin-top: 10px;
-    }
-    .notDia p{
-        font-size: 19px;
-        margin-top: 5px;
-    }
-    .notDia a{
-        font-size: 24px;
-        margin-top: 10px;
-        margin-bottom: 20px;
-    }
-    .noticia img{
-        width: 350px;
-        height: 350px;
-        margin: auto;
-    }
-
-    .sugerido{
-        display: none;
-    }
-
-    .nosotros {
-        display: flex;
-        flex-direction: column;
-    }
-    .infoNos {
-        width: 400px;
-        margin-bottom: 20px;
-        border-radius: 5px;
-    }
-    .formContacto{
-        width: 400px;
-        border-radius: 5px;
-    }
-
-
-    .hotMenu.active {
-        left: 0;
-    }
-    .divNav{
-        display: flex;
-    }
-    .divBusqueda input{
-        display: none;
-    }
-    .divBusqueda i{
-        display: none;
-    }
-    .navImg{
-        margin-left: auto;
-        margin-right: auto;
-    }
-    .navImg img{
-        height: 70px;
-    }
-    .divNav i{
-        font-size: 25px;
-        width: 30px;
-        height: 30px;
-    }
-    .hotMenu {
-        width: 100%;
-        left: -120%;
-    }
-    .hotMenu li{
-        font-size: 17px;
-    }
-    .hotMenuRedes i {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: white;
-        color: black;
-        font-size: 25px;
-        border-radius: 50px;
-        margin-top: 20px;
-        width: 40px;
-        height: 40px;
-        margin-bottom: 30px;
-        transition: scale 0.1s ease-in-out;
-    }
-
-    .linksFooter{
-        gap: 16px;
-    }
-    .linksFooter i {
-        font-size: 23px;
-        width: 40px;
-        height: 40px;
-    }
-    .redesFooter img{
-        width: 180px;
-    }
-
-    .footer{
-        display: flex;
-        flex-direction: column;
-    }
-    
-    .footer ul{
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        gap: 10px;
-    }
-    
-    .footer li{
-        margin: auto;
-    }
-
-
-
-    .noticiaSection div div h3{
-        font-size: 22px;
-    }
-    .noticiaSection div div p{
-        font-size: 13px;
-    }
-    .noticiaSection div div a{
-        font-size: 18PX;
-    }
-    .noticiaSection img{
-        height: 280px;
-        width: 280px;
-    }
-
-    .tituloSection h2{
-        font-size: 40px;
-    }
-
-
-    
-
-    .infoPrincipal img{
-        height: 450px;
-        width: 450px;
-    }
-    .infoPrincipal{
-        display: flex;
-        flex-direction: column-reverse;
-        height: auto;
-    }
-    .infoPrincipalTexto{
-        height: auto;
-    }
-    .infoPrincipal h2{
-        font-size: 33px;
-        margin-top: 20px;
-    }
-    .infoPrincipal h3{
-        font-size: 21px;
-        margin-top: 15px;
-    }
-    .infoPrincipal h4{
-        font-size: 18px;
-    }
-    .infoPrincipalRedes{
-        margin-top: 50px;
-    }
-
-
-    .infoSecundaria p{
-        width: 80%;
-        margin-left: 10%;
-        font-size: 17px;
-    }
-    .infoSecundaria li{
-        width: 80%;
-        margin-left: 10%;
-        font-size: 17px;
-    }
-    .secNoticia hr{
-        width: 80%;
-        margin: 25px 0;
-        margin-left: 10%;
-    }
-}
-@media (min-width: 400px) and (max-width: 600px) {
-    main{
-        width: 100%;
-        margin-left: 0;
-    }
-    .divNav{
-        width: 100%;
-    }
-    .ulNotSecundarias img {
-        display: block;
-        width: 150px;
-        height: 150px;
-        margin-top: 50px;
-      }
-    .divNotGrande{
-        padding: 10px;
-    }
-    .ulNotSecundarias p {
-        font-size: 16px;
-        text-align: left;
-        width: 90%;
-    }
-    .ulNotSecundarias{
-        display: grid;
-        grid-template-columns: 1fr;
-        padding: 0;
-    }
-    .ulNotSecundarias li{
-        display: flex;
-        flex-direction: row;
-        gap: 30px;
-    }
-    .ulNotSecundarias p{
-        align-self: center;
-    }
-    .principal h1{
-        font-size: 28px;
-        text-align: left;
-    }
-    .principal p{
-        font-size: 18px;
-        margin-top: 10px;
-        text-align: left;
-    }
-    .principal button{
-        background-color: #d11653;
-        color: white;
-        font-size: 25px;
-        padding: 5px;
-        border-radius: 25px;
-        width: 150px;
-        height: 50px;
-        margin: 20px auto;
-    }
-    .imgPrincipal img{
-        width: 380px;
-        height: 380px;
-        margin: auto;
-    }
-    .divNotPrincipal{
-        display: grid;
-        grid-template-columns: 1fr;
-        text-align: center;
-    }
-
-
-
-    .divNotMomento{
-        padding: 10px 5px 10px 5px;
-    }
-    .noticia{
-        flex-direction: column;
-        text-align: center;
-        padding: 20px;
-    }
-    .notDia h3{
-        font-size: 25px;
-        margin-top: 10px;
-    }
-    .notDia p{
-        font-size: 19px;
-        margin-top: 5px;
-    }
-    .notDia a{
-        font-size: 24px;
-        margin-top: 10px;
-        margin-bottom: 20px;
-    }
-    .noticia img{
-        width: 350px;
-        height: 350px;
-        margin: auto;
-    }
-
-    .sugerido{
-        display: none;
-    }
-
-    .nosotros {
-        display: flex;
-        flex-direction: column;
-    }
-    .infoNos {
-        width: 300px;
-        margin-bottom: 20px;
-        border-radius: 5px;
-    }
-    .formContacto{
-        width: 300px;
-        border-radius: 5px;
-    }
-
-
-    .hotMenu.active {
-        left: 0;
-    }
-    .divNav{
-        display: flex;
-    }
-    .divBusqueda input{
-        display: none;
-    }
-    .divBusqueda i{
-        display: none;
-    }
-    .navImg{
-        margin-left: auto;
-        margin-right: auto;
-    }
-    .navImg img{
-        height: 70px;
-    }
-    .divNav i{
-        font-size: 25px;
-        width: 30px;
-        height: 30px;
-    }
-    .hotMenu {
-        width: 100%;
-        left: -120%;
-    }
-    .hotMenu li{
-        font-size: 17px;
-    }
-    .hotMenuRedes i {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: white;
-        color: black;
-        font-size: 25px;
-        border-radius: 50px;
-        margin-top: 20px;
-        width: 40px;
-        height: 40px;
-        margin-bottom: 30px;
-        transition: scale 0.1s ease-in-out;
-    }
-
-
-    .linksFooter{
-        gap: 16px;
-    }
-    .linksFooter i {
-        font-size: 23px;
-        width: 40px;
-        height: 40px;
-    }
-    .redesFooter img{
-        width: 180px;
-    }
-
-    .footer{
-        display: flex;
-        flex-direction: column;
-    }
-    
-    .footer ul{
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        gap: 10px;
-    }
-    
-    .footer li{
-        margin: auto;
-    }
-
-
-    .noticiasSection hr{
-        width: 80%;
-        margin-left: 10%;
-    }
-    .noticiaSection div{
-        flex-direction: column;
-    }
-    .noticiaSection div div h3{
-        font-size: 25px;
-    }
-    .noticiaSection div div p{
-        font-size: 16px;
-    }
-    .noticiaSection div div a{
-        font-size: 18PX;
-    }
-    .noticiaSection img{
-        height: 370px;
-        width: 370px;
-    }
-
-    .tituloSection h2{
-        font-size: 35px;
-    }
-
-
-
-    .infoPrincipal img{
-        height: 350px;
-        width: 350px;
-        margin: 0;
-        display: block;
-        align-self: center;
-    }
-    .infoPrincipal{
-        display: flex;
-        flex-direction: column-reverse;
-        height: auto;
-        margin: 0;
-        padding: 10px;
-    }
-    .infoPrincipalTexto{
-        height: auto;
-        margin: 0;
-        width: 100%;
-    }
-    .infoPrincipal h2{
-        font-size: 25px;
-        margin-top: 20px;
-    }
-    .infoPrincipal h3{
-        font-size: 18px;
-        margin-top: 15px;
-    }
-    .infoPrincipal h4{
-        font-size: 18px;
-    }
-    .infoPrincipalRedes {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100%;
-        flex-direction: column;
-        margin-top: 50px;
-    }
-    .infoPrincipalRedes h4 {
-        margin: 0;
-    }
-    .infoPrincipalRedes i{
-        margin-top: 20px;
-    }
-
-    .infoSecundaria p{
-        width: 90%;
-        margin-left: 5%;
-        font-size: 17px;
-    }
-    .infoSecundaria li{
-        width: 90%;
-        margin-left: 5%;
-        font-size: 17px;
-    }
-    .secNoticia hr{
-        width: 90%;
-        margin: 20px 0;
-        margin-left: 5%;
-    }
-}
-@media (min-width: 300px) and (max-width: 400px) {
-    main{
-        width: 100%;
-        margin-left: 0;
-    }
-    .divNav{
-        width: 100%;
-    }
-    .ulNotSecundarias img {
-        display: block;
-        margin: 10px auto;
-        width: 220px;
-        height: 220px;
-        margin-top: 50px;
-      }
-    .divNotGrande{
-        padding: 10px;
-    }
-    .ulNotSecundarias p {
-        font-size: 15px;
-        text-align: left;
-    }
-    .ulNotSecundarias{
-        display: grid;
-        grid-template-columns: 1fr;
-        padding: 0;
-    }
-    .ulNotSecundarias li{
-        display: flex;
-        flex-direction: column;
-        margin: auto;
-    }
-    .ulNotSecundarias p{
-        align-self: center;
-    }
-    .principal h1{
-        font-size: 22px;
-        text-align: left;
-    }
-    .principal p{
-        font-size: 13px;
-        margin-top: 10px;
-        text-align: left;
-    }
-    .principal button{
-        background-color: #d11653;
-        color: white;
-        font-size: 15px;
-        padding: 5px;
-        border-radius: 25px;
-        width: 90px;
-        margin: 20px auto;
-    }
-    .imgPrincipal img{
-        width: 250px;
-        height: 250px;
-        margin: auto;
-    }
-    .divNotPrincipal{
-        display: grid;
-        grid-template-columns: 1fr;
-        text-align: center;
-    }
-
-
-
-    .divNotMomento{
-        padding: 10px 5px 10px 5px;
-    }
-    .noticia{
-        flex-direction: column;
-        text-align: center;
-        padding: 0;
-    }
-    .notDia h3{
-        font-size: 18px;
-        margin-top: 10px;
-    }
-    .notDia p{
-        font-size: 14px;
-        margin-top: 5px;
-    }
-    .notDia a{
-        font-size: 20px;
-        margin-top: 10px;
-        margin-bottom: 20px;
-    }
-    .noticia img{
-        width: 250px;
-        height: 250px;
-        margin: auto;
-    }
-
-    .sugerido{
-        display: none;
-    }
-
-    .nosotros {
-        display: flex;
-        flex-direction: column;
-    }
-    .infoNos {
-        width: 200px;
-        margin-bottom: 20px;
-        border-radius: 5px;
-    }
-    .formContacto{
-        width: 200px;
-        border-radius: 5px;
-    }
-
-
-    .hotMenu.active {
-        left: 0;
-    }
-    .divNav{
-        display: flex;
-    }
-    .divBusqueda input{
-        display: none;
-    }
-    .divBusqueda i{
-        display: none;
-    }
-    .navImg{
-        margin-left: auto;
-        margin-right: auto;
-    }
-    .navImg img{
-        height: 70px;
-    }
-    .divNav i{
-        font-size: 25px;
-        width: 30px;
-        height: 30px;
-    }
-    .hotMenu {
-        width: 100%;
-        left: -120%;
-    }
-    .hotMenu li{
-        font-size: 17px;
-    }
-    .hotMenuRedes i {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: white;
-        color: black;
-        font-size: 25px;
-        border-radius: 50px;
-        margin-top: 20px;
-        width: 40px;
-        height: 40px;
-        margin-bottom: 30px;
-        transition: scale 0.1s ease-in-out;
-    }
-
-    .linksFooter{
-        gap: 16px;
-    }
-    .linksFooter i {
-        font-size: 23px;
-        width: 40px;
-        height: 40px;
-    }
-    .redesFooter img{
-        width: 180px;
-    }
-
-    .footer{
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        margin: 0;
-    }
-    
-    .footer ul{
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        gap: 10px;
-        margin: 0;
-    }
-
-    
-    
-    .noticiasSection hr{
-        width: 80%;
-        margin-left: 10%;
-    }
-    .noticiaSection div{
-        flex-direction: column;
-    }
-    .noticiaSection div div h3{
-        font-size: 20px;
-    }
-    .noticiaSection div div p{
-        font-size: 15px;
-    }
-    .noticiaSection div div a{
-        font-size: 16PX;
-    }
-    .noticiaSection img{
-        height: 250px;
-        width: 250px;
-        margin: 5px auto;
-    }
-
-    .tituloSection h2{
-        font-size: 35px;
-    }
-
-
-    .infoPrincipal img{
-        height: 250px;
-        width: 250px;
-        margin: 0;
-        display: block;
-        align-self: center;
-    }
-    .infoPrincipal{
-        display: flex;
-        flex-direction: column-reverse;
-        height: auto;
-        margin: 0;
-        padding: 10px;
-    }
-    .infoPrincipalTexto{
-        height: auto;
-        margin: 0;
-        width: 100%;
-    }
-    .infoPrincipal h2{
-        font-size: 22px;
-        margin-top: 20px;
-    }
-    .infoPrincipal h3{
-        font-size: 15px;
-        margin-top: 15px;
-    }
-    .infoPrincipal h4{
-        font-size: 15px;
-    }
-    .infoPrincipalRedes {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100%;
-        flex-direction: column;
-        margin-top: 50px;
-    }
-    .infoPrincipalRedes h4 {
-        margin: 0;
-    }
-    .infoPrincipalRedes i{
-        margin-top: 20px;
-    }
-
-
-    .infoSecundaria p{
-        width: 90%;
-        margin-left: 5%;
-        font-size: 15px;
-    }
-    .infoSecundaria li{
-        width: 90%;
-        margin-left: 5%;
-        font-size: 15px;
-    }
-    .secNoticia hr{
-        width: 90%;
-        margin: 15px 0;
-        margin-left: 5%;
-    }
-}
-@media (min-width: 100px) and (max-width: 300px) {
-    .ulNotSecundarias img {
-        width: 150px;
-        height: 150px;
-        margin: 10px 10px 10px 0;
-    }
-
-    .ulNotSecundarias p {
-        width: 120px;
-        font-size: 12px;
-    }
-    .ulNotSecundarias{
-        display: grid;
-        grid-template-columns: 1fr;
-        margin-left: -40px;
-    }
-    .ulNotSecundarias li{
-        display: flex;
-        flex-direction: column;
-    }
-    .ulNotSecundarias p{
-        align-self: center;
-    }
-
-
-
-    .divNotMomento{
-        padding: 10px 5px 10px 5px;
-    }
-    .noticia{
-        flex-direction: column-reverse;
-        text-align: left;
-        padding: 0;
-    }
-    .notDia h3{
-        font-size: 16px;
-        margin-top: 10px;
-    }
-    .notDia p{
-        font-size: 11px;
-        margin-top: 5px;
-    }
-    .notDia a{
-        font-size: 13px;
-        margin-top: 10px;
-    }
-    .noticia img{
-        width: 175px;
-        height: 175px;
-        margin-left: 5px;
-    }
-
-    .sugerido{
-        display: none;
-    }
-
-    .nosotros {
-        display: flex;
-        flex-direction: column;
-    }
-    .infoNos {
-        width: 150px;
-        margin-bottom: 20px;
-        border-radius: 5px;
-    }
-    .formContacto{
-        width: 150px;
-        border-radius: 5px;
-    }
-
-    .hotMenu.active {
-        left: 0;
-    }
-    .divNav{
-        display: flex;
-    }
-    .divBusqueda input{
-        display: none;
-    }
-    .divBusqueda i{
-        display: none;
-    }
-    .navImg{
-        margin-left: auto;
-        margin-right: auto;
-    }
-    .navImg img{
-        width: 100%;
-        height: 50px;
-    }
-    .divNav i{
-        font-size: 25px;
-        width: 30px;
-        height: 30px;
-    }
-
-    .hotMenu {
-        width: 100%;
-        left: -120%;
-    }
-    .hotMenu li{
-        font-size: 17px;
-    }
-    .hotMenuRedes i {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: white;
-        color: black;
-        font-size: 25px;
-        border-radius: 50px;
-        margin-top: 20px;
-        width: 40px;
-        height: 40px;
-        margin-bottom: 30px;
-        transition: scale 0.1s ease-in-out;
-    }
-
-
-    .noticiasSection hr{
-        width: 80%;
-        margin-left: 10%;
-    }
-    .noticiaSection div{
-        flex-direction: column;
-    }
-    .noticiaSection div div h3{
-        font-size: 20px;
-    }
-    .noticiaSection div div p{
-        font-size: 15px;
-    }
-    .noticiaSection div div a{
-        font-size: 16PX;
-    }
-    .noticiaSection img{
-        height: 250px;
-        width: 250px;
-        margin: 5px auto;
-    }
-
-    .tituloSection h2{
-        font-size: 35px;
-    }
-
-
-    
-    .infoPrincipal img{
-        height: 250px;
-        width: 250px;
-        margin: 0;
-        display: block;
-        align-self: center;
-    }
-    .infoPrincipal{
-        display: flex;
-        flex-direction: column-reverse;
-        height: auto;
-        margin: 0;
-        padding: 10px;
-    }
-    .infoPrincipalTexto{
-        height: auto;
-        margin: 0;
-        width: 100%;
-    }
-    .infoPrincipal h2{
-        font-size: 22px;
-        margin-top: 20px;
-    }
-    .infoPrincipal h3{
-        font-size: 15px;
-        margin-top: 15px;
-    }
-    .infoPrincipal h4{
-        font-size: 15px;
-    }
-    .infoPrincipalRedes {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100%;
-        flex-direction: column;
-        margin-top: 50px;
-    }
-    .infoPrincipalRedes h4 {
-        margin: 0;
-    }
-    .infoPrincipalRedes i{
-        margin-top: 20px;
-    }
-
-
-    .infoSecundaria p{
-        width: 90%;
-        margin-left: 5%;
-        font-size: 15px;
-    }
-    .infoSecundaria li{
-        width: 90%;
-        margin-left: 5%;
-        font-size: 15px;
-    }
-    .secNoticia hr{
-        width: 90%;
-        margin-left: 5%;
-    }
+.divSeccionesFooter a:hover{
+    color: #d11653;
 }
