@@ -20,10 +20,9 @@ h1, h2, h3, h4, h5{
     grid-template-columns: 1fr 1fr 1fr;
     background-color: rgb(255, 255, 255);
 
-    width: 80%;
-
+    z-index: 100;
+    width: 100%;
     align-items: center;
-    justify-content: center;
 
     position: fixed;
 }
@@ -164,7 +163,7 @@ h1, h2, h3, h4, h5{
 main{
     width: 80%;
     margin-left: 10%;
-    margin-top: 100px;
+    margin-top: 70px;
 }
 
 .secPrincipal{
@@ -182,10 +181,8 @@ main{
 }
 .divNotPrincipal img{
     object-fit: cover;
-    width: 100%;
-    height: 100%;
-    max-height: 400px;
-    max-width: 400px;
+    height: 500px;
+    width: 500px;
     display: flex;
     margin-left: auto;
     border-radius: 10px;
@@ -214,6 +211,7 @@ main{
     border: none;
     border-radius: 10px;
     transition: scale 0.05s ease-in;
+    width: 30%;
 
 }
 .divNotPrincipal button:hover{
@@ -561,18 +559,30 @@ main{
         font-size: 20px;
         width: 50%;
     } 
+    .divNotPrincipal img{
+        width: 400px;
+        height: 400px;
+    }
 
 }
 
 @media (max-width: 1200px) and (min-width: 900px){
 
     
-
+    .divNotPrincipal {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .divNotPrincipal img{
+        margin-right: auto;
+        width: 500px;
+        height: 500px;
+    }
     .divNotPrincipal h1{
         font-size: 35px;
     }
     .divNotPrincipal p{
-        font-size: 15px;
+        font-size: 20px;
     }
     .divNotPrincipal button{
         font-size: 20px;
@@ -605,14 +615,23 @@ main{
 
 @media (max-width: 900px) and (min-width: 800px){
 
+    .divNotPrincipal {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .divNotPrincipal img{
+        margin-right: auto;
+        width: 500px;
+        height: 500px;
+    }
     .divNotPrincipal h1{
-        font-size: 30px;
+        font-size: 35px;
     }
     .divNotPrincipal p{
-        font-size: 13px;
+        font-size: 20px;
     }
     .divNotPrincipal button{
-        font-size: 15px;
+        font-size: 20px;
         width: 50%;
     }
 
@@ -641,15 +660,18 @@ main{
     
 
 @media (max-width: 800px) and (min-width: 500px){
-
-    .divNotPrincipal{
+    main{
+        width: 100%;
+        margin-left: 0;
+    }
+    .divNotPrincipal {
         display: flex;
         flex-direction: column-reverse;
     }
     .divNotPrincipal img{
-        height: 375px;
-        width: 3750px;
         margin-right: auto;
+        width: 375px;
+        height: 375px;
     }
     .divNotPrincipal h1{
         font-size: 35px;
@@ -658,12 +680,14 @@ main{
         font-size: 20px;
     }
     .divNotPrincipal button{
-        font-size: 15px;
+        font-size: 20px;
         width: 50%;
-        margin-left: 25%;
     }
 
 
+    .navDiv{
+        width: 100%;
+    }
     .navDivLista ul{
         font-size: 20px;
         gap: 15px;
@@ -690,12 +714,9 @@ main{
     main{
         width: 100%;
         margin-left: 0;
-        margin-top: 100px;
+        margin-top: 70px;
     }
     
-    .secPrincipal{
-
-    }
     .divNotPrincipal{
         display: flex;
         flex-direction: column-reverse;
@@ -720,20 +741,22 @@ main{
 
 
     .navDiv{
-        grid-template-columns: 1fr 1fr;
+        display: flex;
+        flex-direction: row;
         height: 70px;
         width: 100%;
+        justify-content: space-between;
     }
     .navDivLista ul{
-        font-size: 15px;
+        font-size: 20px;
         gap: 15px;
+        
     }
     .navDiv i{
         width: 30px;
         height: 30px;
     }
     .navDivSeccionesHotMenu {
-        width: 70%;
     }
     .hotMenuRedes i {
         font-size: 30px;
@@ -745,6 +768,6 @@ main{
         transition: scale 0.1s ease-in-out;
     }
     .navDivImg{
-        display: none;
+        display: none
     }
 }
