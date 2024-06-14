@@ -23,6 +23,7 @@ h1, h2, h3, h4, h5{
     z-index: 100;
     width: 100%;
     align-items: center;
+    height: 70px;
 
     position: fixed;
 }
@@ -283,17 +284,18 @@ main{
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin-bottom: 50px;
-    width: 100%;
-    
+
+    justify-content: center;
+    align-items: center;
 }
 
 .noticia div{
-    margin: 0 auto;
+    margin: 0 ;
     display: flex;
     flex-direction: column;
     height: 400px;
     justify-content: space-evenly;
-    width: 100%;
+    width: 90%;
     padding:  0 50px;
 }
 .noticia h2{
@@ -546,7 +548,11 @@ main{
 }
 
 
-
+@media (min-width: 1600px) {
+    .divNotSecundarias{
+        margin-bottom: 40px;
+    }
+}
 @media (max-width: 1600px) and (min-width: 1200px){
 
     .divNotPrincipal h1{
@@ -564,6 +570,30 @@ main{
         height: 400px;
     }
 
+    .divNotSecundarias img {
+        width: 300px;
+        height: 300px; 
+    }
+
+
+    .noticia div{
+        height: 300px;
+    }
+    .noticia h2{
+        font-size: 35px;
+    }
+    .noticia P{
+        font-size: 15px;
+        margin-top: 20px;
+    }
+    .noticia a{
+        font-size: 20px;
+    }
+    
+    .noticia img{
+        width: 300px;
+        height: 300px;
+    }
 }
 
 @media (max-width: 1200px) and (min-width: 900px){
@@ -610,7 +640,35 @@ main{
         margin-bottom: 30px;
         transition: scale 0.1s ease-in-out;
     }
+    .divNotSecundarias{
+        display: flex;
+        flex-direction: column;
+    }
+    .divNotSecundarias img {
+        width: 400px;
+        height: 400px; 
+    }
+    .divNotSecundarias h2{
+        text-align: center;
+        font-size: 25px;
+    }
+
+    .noticia{
+        display: flex;
+        flex-direction: column-reverse;
+    }
     
+    .noticia div{
+        height: 300px;
+    }
+
+    .noticia img{
+        margin-right: auto;
+        margin-top: 40px;
+        margin-bottom: 40px;
+        width: 450px;
+        height: 450px;
+    }
 }
 
 @media (max-width: 900px) and (min-width: 800px){
@@ -634,6 +692,37 @@ main{
         font-size: 20px;
         width: 50%;
     }
+
+    .divNotSecundarias{
+        display: flex;
+        flex-direction: column;
+    }
+    .divNotSecundarias img {
+        width: 350px;
+        height: 350px; 
+    }
+    .divNotSecundarias h2{
+        text-align: center;
+        font-size: 20px;
+    }
+
+    .noticia{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    
+    .noticia div{
+        height: 300px;
+    }
+
+    .noticia img{
+        margin-right: auto;
+        margin-top: 40px;
+        margin-bottom: 40px;
+        width: 450px;
+        height: 450px;
+    }
+
 
     .navDivLista ul{
         font-size: 20px;
@@ -684,6 +773,36 @@ main{
         width: 50%;
     }
 
+    .divNotSecundarias{
+        display: flex;
+        flex-direction: column;
+    }
+    .divNotSecundarias img {
+        width: 400px;
+        height: 400px; 
+    }
+    .divNotSecundarias h2{
+        text-align: center;
+        font-size: 20px;
+    }
+
+
+    .noticia{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    
+    .noticia div{
+        height: 300px;
+    }
+
+    .noticia img{
+        margin-right: auto;
+        margin-top: 40px;
+        margin-bottom: 40px;
+        width: 425px;
+        height: 425px;
+    }
 
     .navDiv{
         width: 100%;
@@ -739,6 +858,49 @@ main{
         margin-left: 25%;
     }
 
+    
+    .divNotSecundarias{
+        display: flex;
+        flex-direction: column;
+    }
+    .divNotSecundarias img {
+        width: 275px;
+        height: 275px; 
+    }
+    .divNotSecundarias h2{
+        text-align: center;
+        font-size: 20px;
+    }
+
+
+    .noticia{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    
+    .noticia div{
+        height: 300px;
+    }
+
+    .noticia img{
+        margin-right: auto;
+        margin-top: 40px;
+        margin-bottom: 40px;
+        width: 250px;
+        height: 250px;
+    }
+
+    .noticia h2{
+        font-size: 30px;
+    }
+    .noticia P{
+        font-size: 15px;
+        margin-top: 20px;
+    }
+    .noticia a{
+        font-size: 20px;
+    }
+
 
     .navDiv{
         display: flex;
@@ -756,7 +918,8 @@ main{
         width: 30px;
         height: 30px;
     }
-    .navDivSeccionesHotMenu {
+    .navDivSeccionesHotMenu {   
+        width: 100%;
     }
     .hotMenuRedes i {
         font-size: 30px;
