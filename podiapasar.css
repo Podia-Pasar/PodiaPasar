@@ -562,12 +562,13 @@ main{
     display: grid;
     grid-template-columns: 1fr 1fr ;
     padding: 40px;
+    gap: 50px;
 }
 .divTituloNoticia img{
     width: 450px;
     height: 450px;
     margin-left: auto;
-    margin-right: auto;
+
     border-radius: 10px;
     object-fit: cover;
     box-shadow: 4px 4px 8px rgb(0, 0, 0, 0.5),-4px 4px 8px rgb(0, 0, 0, 0.5);
@@ -590,6 +591,7 @@ main{
 }
 .divNoticia h4{
     font-size: 30px;
+    margin-bottom: 20px;
 }
 .divNoticia p{
     font-size: 20px;
@@ -649,6 +651,37 @@ main{
     .noticia img{
         width: 300px;
         height: 300px;
+    }
+
+
+    .divTituloNoticia img{
+        width: 400px;
+        height: 400px;
+    }
+    .divTituloNoticia h3{
+        font-size: 35px;
+    }
+    .divTituloNoticia p{
+        font-size: 20px;
+        margin-top: 30px;
+    }
+
+    .divNoticia{
+        width: 80%;
+        margin-left: 10%;
+        padding: 40px;
+        gap: 10px;
+    }
+    .divNoticia h4{
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+    .divNoticia p{
+        font-size: 20px;
+    }
+    .divNoticia img{
+        width: 400px;
+        height: 400px;
     }
 }
 
@@ -725,6 +758,40 @@ main{
         width: 450px;
         height: 450px;
     }
+
+
+    .divTituloNoticia{
+        gap: 10px;
+    }
+    .divTituloNoticia img{
+        width: 350px;
+        height: 350px;
+    }
+    .divTituloNoticia h3{
+        font-size: 30px;
+    }
+    .divTituloNoticia p{
+        font-size: 20px;
+        margin-top: 15px;
+    }
+
+    .divNoticia{
+        width: 80%;
+        margin-left: 10%;
+        padding: 40px;
+        gap: 10px;
+    }
+    .divNoticia h4{
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+    .divNoticia p{
+        font-size: 20px;
+    }
+    .divNoticia img{
+        width: 400px;
+        height: 400px;
+    }
 }
 
 @media (max-width: 900px) and (min-width: 800px){
@@ -800,6 +867,43 @@ main{
         height: 50px;
         margin-bottom: 30px;
         transition: scale 0.1s ease-in-out;
+    }
+
+
+    
+    .divTituloNoticia{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .divTituloNoticia img{
+        width: 450px;
+        height: 450px;
+        margin-right: auto;
+    }
+    .divTituloNoticia h3{
+        font-size: 35px;
+    }
+    .divTituloNoticia p{
+        font-size: 25px;
+        margin-top: 15px;
+    }
+
+    .divNoticia{
+        width: 80%;
+        margin-left: 10%;
+        padding: 20px;
+        gap: 10px;
+    }
+    .divNoticia h4{
+        font-size: 28px;
+        margin-bottom: 20px;
+    }
+    .divNoticia p{
+        font-size: 18px;
+    }
+    .divNoticia img{
+        width: 350px;
+        height: 350px;
     }
 }
     
@@ -884,6 +988,53 @@ main{
         margin-bottom: 30px;
         transition: scale 0.1s ease-in-out;
     }
+
+
+
+    .divTituloNoticia{
+        display: flex;
+        flex-direction: column-reverse;
+        width: 80%;
+        margin-left: 10%;
+        padding: 0;
+        margin-bottom: 50px;
+        margin-top: 100px;
+    }
+    .secNoticia hr{
+        width: 80%;
+        margin-left: 10%;
+    }
+    .divTituloNoticia img{
+        width: 425px;
+        height: 425px;
+        margin-right: auto;
+    }
+    .divTituloNoticia h3{
+        font-size: 30px;
+    }
+    .divTituloNoticia p{
+        font-size: 20px;
+        margin-top: 15px;
+    }
+
+    .divNoticia{
+        width: 80%;
+        margin-left: 10%;
+        padding: 15px;
+        gap: 10px;
+    }
+    .divNoticia h4{
+        font-size: 25px;
+        margin-bottom: 20px;
+    }
+    .divNoticia p{
+        font-size: 15px;
+    }
+    .divNoticia img{
+        width: 300px;
+        height: 300px;
+    }
+
 }
 @media (max-width: 500px) and (min-width: 300px){
     main{
@@ -988,5 +1139,52 @@ main{
     }
     .navDivImg{
         display: none
+    }
+
+
+
+    .divTituloNoticia{
+        display: flex;
+        flex-direction: column-reverse;
+
+        padding: 20px;
+        margin-bottom: 50px;
+        margin-top: 100px;
+    }
+    .secNoticia hr{
+        width: 80%;
+        margin-left: 10%;
+    }
+    .divTituloNoticia img{
+        width: 275px;
+        height: 275px;
+        margin-right: auto;
+    }
+    .divTituloNoticia h3{
+        font-size: 25px;
+    }
+    .divTituloNoticia p{
+        font-size: 15px;
+        margin-top: 15px;
+    }
+
+    
+    .divNoticia{
+        width: 90%;
+        margin-left: 5%;
+        padding: 0;
+        gap: 10px;
+        margin-top: 50px;
+    }
+    .divNoticia h4{
+        font-size: 25px;
+        margin-bottom: 20px;
+    }
+    .divNoticia p{
+        font-size: 15px;
+    }
+    .divNoticia img{
+        width: 275px;
+        height: 275px;
     }
 }
