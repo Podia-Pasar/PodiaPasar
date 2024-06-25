@@ -26,6 +26,7 @@ h1, h2, h3, h4, h5{
     height: 70px;
 
     top: 0;
+    left: 0;
     position: fixed;
 }
 .navDivImg{
