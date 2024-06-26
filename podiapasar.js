@@ -3,7 +3,7 @@ const hotMenuC = document.getElementById('hotMenuC');
 const hotMenu = document.getElementById('hotMenu');
 
 hotMenuA.addEventListener('click', () => {
-  hotMenu.style.left = '10%';
+  hotMenu.style.left = 0;
   hotMenuA.style.display = "none"
   hotMenuC.style.display = "block"
 });

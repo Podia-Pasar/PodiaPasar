@@ -20,11 +20,13 @@ h1, h2, h3, h4, h5{
     grid-template-columns: 1fr 1fr 1fr;
     background-color: rgb(255, 255, 255);
 
-    width: 80%;
-
+    z-index: 100;
+    width: 100%;
     align-items: center;
-    justify-content: center;
+    height: 70px;
 
+    top: 0;
+    left: 0;
     position: fixed;
 }
 .navDivImg{
@@ -165,7 +167,7 @@ h1, h2, h3, h4, h5{
 main{
     width: 80%;
     margin-left: 10%;
-    margin-top: 100px;
+    margin-top: 70px;
 }
 
 .secPrincipal{
@@ -185,7 +187,8 @@ main{
     object-fit: cover;
     width: 500px;
     height: 500px;
-
+    height: 500px;
+    width: 500px;
     display: flex;
     margin-left: auto;
     border-radius: 10px;
@@ -214,6 +217,7 @@ main{
     border: none;
     border-radius: 10px;
     transition: scale 0.05s ease-in;
+    width: 30%;
 
 }
 .divNotPrincipal button:hover{
@@ -284,17 +288,18 @@ main{
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin-bottom: 50px;
-    width: 100%;
-    
+
+    justify-content: center;
+    align-items: center;
 }
 
 .noticia div{
-    margin: 0 auto;
+    margin: 0 ;
     display: flex;
     flex-direction: column;
     height: 400px;
     justify-content: space-evenly;
-    width: 100%;
+    width: 90%;
     padding:  0 50px;
 }
 .noticia h2{
@@ -548,6 +553,68 @@ main{
 
 
 
+
+.secNoticia hr{
+    width: 100%;
+    background-color: black;
+    border: none;
+    border-radius: 50px;
+    height: 2px;
+    margin-top: 10px;
+}
+.divTituloNoticia{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    padding: 40px;
+    gap: 50px;
+}
+.divTituloNoticia img{
+    width: 450px;
+    height: 450px;
+    margin-left: auto;
+
+    border-radius: 10px;
+    object-fit: cover;
+    box-shadow: 4px 4px 8px rgb(0, 0, 0, 0.5),-4px 4px 8px rgb(0, 0, 0, 0.5);
+}
+.divTituloNoticia h3{
+    font-size: 40px;
+}
+.divTituloNoticia p{
+    font-size: 25px;
+    margin-top: 30px;
+}
+
+.divNoticia{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin-left: 10%;
+    padding: 40px;
+    gap: 10px;
+}
+.divNoticia h4{
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+.divNoticia p{
+    font-size: 20px;
+}
+.divNoticia img{
+    width: 400px;
+    height: 400px;
+    margin-right: auto;
+    margin-top: 20px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+
+@media (min-width: 1600px) {
+    .divNotSecundarias{
+        margin-bottom: 40px;
+    }
+}
 @media (max-width: 1600px) and (min-width: 1200px){
 
     .divNotPrincipal h1{
@@ -565,17 +632,81 @@ main{
         width: 450px;
 
     }
+
+    .divNotSecundarias img {
+        width: 300px;
+        height: 300px; 
+    }
+
+
+    .noticia div{
+        height: 300px;
+    }
+    .noticia h2{
+        font-size: 35px;
+    }
+    .noticia P{
+        font-size: 15px;
+        margin-top: 20px;
+    }
+    .noticia a{
+        font-size: 20px;
+    }
+    
+    .noticia img{
+        width: 300px;
+        height: 300px;
+    }
+
+
+    .divTituloNoticia img{
+        width: 400px;
+        height: 400px;
+    }
+    .divTituloNoticia h3{
+        font-size: 35px;
+    }
+    .divTituloNoticia p{
+        font-size: 20px;
+        margin-top: 30px;
+    }
+
+    .divNoticia{
+        width: 80%;
+        margin-left: 10%;
+        padding: 40px;
+        gap: 10px;
+    }
+    .divNoticia h4{
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+    .divNoticia p{
+        font-size: 20px;
+    }
+    .divNoticia img{
+        width: 400px;
+        height: 400px;
+    }
 }
 
 @media (max-width: 1200px) and (min-width: 900px){
 
     
-
+    .divNotPrincipal {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .divNotPrincipal img{
+        margin-right: auto;
+        width: 500px;
+        height: 500px;
+    }
     .divNotPrincipal h1{
         font-size: 35px;
     }
     .divNotPrincipal p{
-        font-size: 15px;
+        font-size: 20px;
     }
     .divNotPrincipal button{
         font-size: 20px;
@@ -607,19 +738,90 @@ main{
         margin-bottom: 30px;
         transition: scale 0.1s ease-in-out;
     }
+    .divNotSecundarias{
+        display: flex;
+        flex-direction: column;
+    }
+    .divNotSecundarias img {
+        width: 400px;
+        height: 400px; 
+    }
+    .divNotSecundarias h2{
+        text-align: center;
+        font-size: 25px;
+    }
+
+    .noticia{
+        display: flex;
+        flex-direction: column-reverse;
+    }
     
+    .noticia div{
+        height: 300px;
+    }
+
+    .noticia img{
+        margin-right: auto;
+        margin-top: 40px;
+        margin-bottom: 40px;
+        width: 450px;
+        height: 450px;
+    }
+
+
+    .divTituloNoticia{
+        gap: 10px;
+    }
+    .divTituloNoticia img{
+        width: 350px;
+        height: 350px;
+    }
+    .divTituloNoticia h3{
+        font-size: 30px;
+    }
+    .divTituloNoticia p{
+        font-size: 20px;
+        margin-top: 15px;
+    }
+
+    .divNoticia{
+        width: 80%;
+        margin-left: 10%;
+        padding: 40px;
+        gap: 10px;
+    }
+    .divNoticia h4{
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+    .divNoticia p{
+        font-size: 20px;
+    }
+    .divNoticia img{
+        width: 400px;
+        height: 400px;
+    }
 }
 
 @media (max-width: 900px) and (min-width: 800px){
 
+    .divNotPrincipal {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .divNotPrincipal img{
+        margin-right: auto;
+        width: 500px;
+        height: 500px;
+    }
     .divNotPrincipal h1{
-        font-size: 30px;
+        font-size: 35px;
     }
     .divNotPrincipal p{
-        font-size: 13px;
+        font-size: 20px;
     }
     .divNotPrincipal button{
-        font-size: 15px;
+        font-size: 20px;
         width: 50%;
     }
     .divNotPrincipal img{
@@ -627,6 +829,37 @@ main{
         width: 300px;
         margin-right: auto;
     }
+
+    .divNotSecundarias{
+        display: flex;
+        flex-direction: column;
+    }
+    .divNotSecundarias img {
+        width: 350px;
+        height: 350px; 
+    }
+    .divNotSecundarias h2{
+        text-align: center;
+        font-size: 20px;
+    }
+
+    .noticia{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    
+    .noticia div{
+        height: 300px;
+    }
+
+    .noticia img{
+        margin-right: auto;
+        margin-top: 40px;
+        margin-bottom: 40px;
+        width: 450px;
+        height: 450px;
+    }
+
 
     .navDivLista ul{
         font-size: 20px;
@@ -649,12 +882,52 @@ main{
         margin-bottom: 30px;
         transition: scale 0.1s ease-in-out;
     }
+
+
+    
+    .divTituloNoticia{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .divTituloNoticia img{
+        width: 450px;
+        height: 450px;
+        margin-right: auto;
+    }
+    .divTituloNoticia h3{
+        font-size: 35px;
+    }
+    .divTituloNoticia p{
+        font-size: 25px;
+        margin-top: 15px;
+    }
+
+    .divNoticia{
+        width: 80%;
+        margin-left: 10%;
+        padding: 20px;
+        gap: 10px;
+    }
+    .divNoticia h4{
+        font-size: 28px;
+        margin-bottom: 20px;
+    }
+    .divNoticia p{
+        font-size: 18px;
+    }
+    .divNoticia img{
+        width: 350px;
+        height: 350px;
+    }
 }
     
 
 @media (max-width: 800px) and (min-width: 500px){
-
-    .divNotPrincipal{
+    main{
+        width: 100%;
+        margin-left: 0;
+    }
+    .divNotPrincipal {
         display: flex;
         flex-direction: column-reverse;
     }
@@ -670,12 +943,44 @@ main{
         font-size: 20px;
     }
     .divNotPrincipal button{
-        font-size: 15px;
+        font-size: 20px;
         width: 50%;
-        margin-left: 25%;
+    }
+
+    .divNotSecundarias{
+        display: flex;
+        flex-direction: column;
+    }
+    .divNotSecundarias img {
+        width: 400px;
+        height: 400px; 
+    }
+    .divNotSecundarias h2{
+        text-align: center;
+        font-size: 20px;
     }
 
 
+    .noticia{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    
+    .noticia div{
+        height: 300px;
+    }
+
+    .noticia img{
+        margin-right: auto;
+        margin-top: 40px;
+        margin-bottom: 40px;
+        width: 425px;
+        height: 425px;
+    }
+
+    .navDiv{
+        width: 100%;
+    }
     .navDivLista ul{
         font-size: 20px;
         gap: 15px;
@@ -697,17 +1002,61 @@ main{
         margin-bottom: 30px;
         transition: scale 0.1s ease-in-out;
     }
+
+
+
+    .divTituloNoticia{
+        display: flex;
+        flex-direction: column-reverse;
+        width: 80%;
+        margin-left: 10%;
+        padding: 0;
+        margin-bottom: 50px;
+        margin-top: 100px;
+    }
+    .secNoticia hr{
+        width: 80%;
+        margin-left: 10%;
+    }
+    .divTituloNoticia img{
+        width: 425px;
+        height: 425px;
+        margin-right: auto;
+    }
+    .divTituloNoticia h3{
+        font-size: 30px;
+    }
+    .divTituloNoticia p{
+        font-size: 20px;
+        margin-top: 15px;
+    }
+
+    .divNoticia{
+        width: 80%;
+        margin-left: 10%;
+        padding: 15px;
+        gap: 10px;
+    }
+    .divNoticia h4{
+        font-size: 25px;
+        margin-bottom: 20px;
+    }
+    .divNoticia p{
+        font-size: 15px;
+    }
+    .divNoticia img{
+        width: 300px;
+        height: 300px;
+    }
+
 }
 @media (max-width: 500px) and (min-width: 300px){
     main{
         width: 100%;
         margin-left: 0;
-        margin-top: 100px;
+        margin-top: 70px;
     }
     
-    .secPrincipal{
-
-    }
     .divNotPrincipal{
         display: flex;
         flex-direction: column-reverse;
@@ -730,22 +1079,68 @@ main{
         margin-left: 25%;
     }
 
+    
+    .divNotSecundarias{
+        display: flex;
+        flex-direction: column;
+    }
+    .divNotSecundarias img {
+        width: 275px;
+        height: 275px; 
+    }
+    .divNotSecundarias h2{
+        text-align: center;
+        font-size: 20px;
+    }
+
+
+    .noticia{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    
+    .noticia div{
+        height: 300px;
+    }
+
+    .noticia img{
+        margin-right: auto;
+        margin-top: 40px;
+        margin-bottom: 40px;
+        width: 250px;
+        height: 250px;
+    }
+
+    .noticia h2{
+        font-size: 30px;
+    }
+    .noticia P{
+        font-size: 15px;
+        margin-top: 20px;
+    }
+    .noticia a{
+        font-size: 20px;
+    }
+
 
     .navDiv{
-        grid-template-columns: 1fr 1fr;
+        display: flex;
+        flex-direction: row;
         height: 70px;
         width: 100%;
+        justify-content: space-between;
     }
     .navDivLista ul{
-        font-size: 15px;
+        font-size: 20px;
         gap: 15px;
+        
     }
     .navDiv i{
         width: 30px;
         height: 30px;
     }
-    .navDivSeccionesHotMenu {
-        width: 70%;
+    .navDivSeccionesHotMenu {   
+        width: 100%;
     }
     .hotMenuRedes i {
         font-size: 30px;
@@ -757,6 +1152,53 @@ main{
         transition: scale 0.1s ease-in-out;
     }
     .navDivImg{
-        display: none;
+        display: none
+    }
+
+
+
+    .divTituloNoticia{
+        display: flex;
+        flex-direction: column-reverse;
+
+        padding: 20px;
+        margin-bottom: 50px;
+        margin-top: 100px;
+    }
+    .secNoticia hr{
+        width: 80%;
+        margin-left: 10%;
+    }
+    .divTituloNoticia img{
+        width: 275px;
+        height: 275px;
+        margin-right: auto;
+    }
+    .divTituloNoticia h3{
+        font-size: 25px;
+    }
+    .divTituloNoticia p{
+        font-size: 15px;
+        margin-top: 15px;
+    }
+
+    
+    .divNoticia{
+        width: 90%;
+        margin-left: 5%;
+        padding: 0;
+        gap: 10px;
+        margin-top: 50px;
+    }
+    .divNoticia h4{
+        font-size: 25px;
+        margin-bottom: 20px;
+    }
+    .divNoticia p{
+        font-size: 15px;
+    }
+    .divNoticia img{
+        width: 275px;
+        height: 275px;
     }
 }
