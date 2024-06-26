@@ -55,6 +55,7 @@ h1, h2, h3, h4, h5{
     font-size: 25px;
     font-weight: bold;
     gap: 30px;
+    margin-right: 20px;
 }
 
   
@@ -182,10 +183,9 @@ main{
 }
 .divNotPrincipal img{
     object-fit: cover;
-    width: 100%;
-    height: 100%;
-    max-height: 400px;
-    max-width: 400px;
+    width: 500px;
+    height: 500px;
+
     display: flex;
     margin-left: auto;
     border-radius: 10px;
@@ -244,14 +244,13 @@ main{
 }
 
 .divNotSecundarias img {
-    width: 100%;
-    height: 100%; 
+    width: 350px;
+    height: 350px; 
     object-fit: cover;
     display: flex;
     margin: 0 auto;
     border-radius: 10px;
-    max-width: 450px;
-    max-height: 450px; 
+
 }
 .divNotSecundarias h2{
     font-size: 20px;
@@ -561,7 +560,11 @@ main{
         font-size: 20px;
         width: 50%;
     } 
+    .divNotPrincipal img{
+        height: 450px;
+        width: 450px;
 
+    }
 }
 
 @media (max-width: 1200px) and (min-width: 900px){
@@ -578,7 +581,11 @@ main{
         font-size: 20px;
         width: 50%;
     }
+    .divNotPrincipal img{
+        height: 350px;
+        width: 350px;
 
+    }
     .navDivLista ul{
         font-size: 20px;
         gap: 15px;
@@ -615,6 +622,11 @@ main{
         font-size: 15px;
         width: 50%;
     }
+    .divNotPrincipal img{
+        height: 300px;
+        width: 300px;
+        margin-right: auto;
+    }
 
     .navDivLista ul{
         font-size: 20px;
@@ -648,7 +660,7 @@ main{
     }
     .divNotPrincipal img{
         height: 375px;
-        width: 3750px;
+        width: 375px;
         margin-right: auto;
     }
     .divNotPrincipal h1{
